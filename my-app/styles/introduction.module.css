@@ -1,0 +1,25 @@
+.introContainer {
+  margin-top: 30%;
+  margin-left: 30%;
+}
+
+.introText pre {
+  color: white;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  margin: 0 auto;
+  letter-spacing: 0.14 em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% {border-color: orange}
+}
