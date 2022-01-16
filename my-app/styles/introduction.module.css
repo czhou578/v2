@@ -1,6 +1,11 @@
 .introContainer {
-  margin-top: 30%;
+  /* margin-top: 30%; */
+  padding-top: 20%;
   margin-left: 30%;
+}
+
+.introContainer > h1, .introContainer > h2 {
+  color: white;
 }
 
 .introText pre {
