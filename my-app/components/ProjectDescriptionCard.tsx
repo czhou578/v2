@@ -5,3 +5,5 @@ const ProjectDescriptionCard: React.FC = () => {
     <div></div>
   )
 }
+
+export default ProjectDescriptionCard
