@@ -7,10 +7,9 @@ const Introduction: FC = () => {
       <h1>Hi, my name is </h1>
       <h2>Colin Zhou</h2>
       <h3>
-        I'm a <br></br>
         <div className={styles.c1}>
           <div className={styles.description}>
-            developer and hobbyist designer based in Issaquah, Washington.
+          I'm a developer and hobbyist designer based in Issaquah, Washington.
           </div>
         </div>
         <br></br>

@@ -21,6 +21,10 @@
   display: inline-block;
 }
 
+.introContainer > h3 {
+  padding-top: 20px;
+}
+
 h3 .description {
   font-size: 1rem;
   color: white;
@@ -29,7 +33,9 @@ h3 .description {
   overflow: hidden;
   border-right: 0.15em solid orange;
   letter-spacing: 0.14 em;
-  animation: typing1 3s steps(25, end) forwards;
+  animation: 
+    typing1 3s steps(35, end) forwards,
+    blinking 1.5s infinite;
 }
 
 
@@ -41,8 +47,10 @@ h3 .description2 {
   white-space: nowrap;
   border-right: 0.15em solid orange;
   letter-spacing: 0.14 em;
-  animation: typing1 3s steps(25, end) forwards;
-  animation-delay: 4s;
+  animation: 
+    typing1 3s steps(35, end) forwards,
+    blinking 1.5s infinite;
+  animation-delay: 3s;
 }
 
 @keyframes typing1 {
@@ -50,7 +58,7 @@ h3 .description2 {
   to {width: 100%;}
 }
 
-@keyframes blink-caret {
+@keyframes blinking {
   from { border-color: transparent }
   to {border-color: orange}
 }
