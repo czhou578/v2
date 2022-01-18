@@ -1,30 +1,56 @@
+
 .introContainer {
-  /* margin-top: 30%; */
-  padding-top: 20%;
-  margin-left: 30%;
+  padding-top: 10%;
+  margin-left: 35%;
+  display: inline-block;
 }
 
 .introContainer > h1, .introContainer > h2 {
   color: white;
 }
 
-.introText pre {
-  color: white;
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  margin: 0 auto;
-  letter-spacing: 0.14 em;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.introContainer > h1 {
+  font-size: 40px;
 }
 
-@keyframes typing {
-  from {width: 0}
-  to {width: 100%}
+.introContainer > h2 {
+  font-size: 30px;
+}
+
+.c1, .c2 {
+  display: inline-block;
+}
+
+h3 .description {
+  font-size: 1rem;
+  color: white;
+  width: 0;
+  white-space: nowrap; 
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  letter-spacing: 0.14 em;
+  animation: typing1 3s steps(25, end) forwards;
+}
+
+
+h3 .description2 {
+  font-size: 1rem;
+  color: white;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid orange;
+  letter-spacing: 0.14 em;
+  animation: typing1 3s steps(25, end) forwards;
+  animation-delay: 4s;
+}
+
+@keyframes typing1 {
+  from {width: 0;}
+  to {width: 100%;}
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% {border-color: orange}
+  from { border-color: transparent }
+  to {border-color: orange}
 }

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from '../styles/headerbar.module.css'
-import resume from '../public/images/resume.pdf'
+// import resume from '../public/images/resume.pdf'
 
 const HeaderBar: FC = () => {
   return (
@@ -30,7 +30,7 @@ const HeaderBar: FC = () => {
           <a href="#section-5">Designs</a>
         </li>
         <li className={styles.listItem}>
-          <a href={resume} target="_blank">Resume</a>
+          <a target="_blank">Resume</a>
         </li>
       </ul>
     </div>
