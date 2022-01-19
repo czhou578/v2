@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from 'aboutcard.module.css'
+import styles from "aboutcard.module.css";
 
 const Aboutcard: FC = () => {
   return (
@@ -8,10 +8,8 @@ const Aboutcard: FC = () => {
         <h3>About me</h3>
       </div>
       <div>
-        <pre>
-          This is colin speaking
-        </pre>
+        <pre>This is colin speaking</pre>
       </div>
     </div>
-  )
-}
+  );
+};
