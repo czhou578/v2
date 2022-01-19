@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { programmerSVG } from "../../scripts/script";
+import styles from '../../styles/svg.module.css'
 
 const Programmer: React.FC = () => {
   useEffect(() => {
@@ -132,9 +133,11 @@ const Programmer: React.FC = () => {
             </filter>
           </defs>
         </svg>
-        <h2>Web Developer</h2>
-        <p>I'll help you connect the worlds of design and development.</p>
-      </div>
+        <div className={styles.programCtn}>
+          <h2 className={styles.header}>Web Developer</h2>
+          <p className={styles.paragraph}>I'll help you connect the worlds of design and development.</p>
+        </div>
+        </div>
     </div>
   );
 };

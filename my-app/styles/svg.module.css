@@ -1,0 +1,23 @@
+.header, .paragraph {
+  color: white;
+}
+
+.header {
+  font-size: 1.5rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+}
+
+.designCtn {
+  position: absolute;
+  top: 114%;
+  left: 20%;
+}
+
+.programCtn {
+  position: absolute;
+  top: 114%;
+  left: 55%;
+}

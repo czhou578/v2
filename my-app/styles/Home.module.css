@@ -2,6 +2,12 @@
  
 }
 
+.svgContainer {
+  margin-left: 10%;
+  margin-top: 140px;
+  display: flex;
+}
+
 .main {
   
 }
