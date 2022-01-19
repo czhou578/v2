@@ -5,6 +5,7 @@ import Introduction from '../components/Introduction'
 import styles from '../styles/Home.module.css'
 import Design from '../public/svgs/Design'
 import Programmer from '../public/svgs/Programmer'
+import Aboutcard from '../components/Aboutcard'
 
 const Home: NextPage = () => {
 
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
           <Design />
           <Programmer />
         </div>
+        <Aboutcard />
       </main>
 
       <footer className={styles.footer}>
