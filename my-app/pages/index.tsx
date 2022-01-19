@@ -3,10 +3,29 @@ import Head from 'next/head'
 import HeaderBar from '../components/HeaderBar'
 import Introduction from '../components/Introduction'
 import styles from '../styles/Home.module.css'
-import Design from '../public/svgs/design'
+import Design from '../public/svgs/Design'
 import Programmer from '../public/svgs/Programmer'
+import { useEffect } from 'react'
 
 const Home: NextPage = () => {
+
+
+//   componentDidMount () {
+//     const script = document.createElement("script");
+//     script.src = "/path/to/resource.js";
+//     script.async = true;
+//     document.body.appendChild(script);
+// }
+
+  useEffect(() => {
+    // const script = document.createElement("script")
+    // script.src = "../../scripts/script.js"
+    // script.async = true;
+    // document.body.appendChild(script)
+  }, [])
+
+
+
   return (
     <div className={styles.container}>
       <Head>

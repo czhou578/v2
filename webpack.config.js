@@ -21,7 +21,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [".tsx,", ".css", ".pdf"], 
+    extensions: [".tsx,", ".css", ".pdf", ".js"], 
   },
   target: "web",
   devTool: "inline-source-map",

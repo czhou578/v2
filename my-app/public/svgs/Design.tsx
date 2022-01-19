@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+import {designSVG} from "../../scripts/script"
+
 const Design: React.FC = () => {
+
+  useEffect(() => {
+    designSVG()
+  }, [])
+
   return (
     <div>
       <div className="icon-1">
