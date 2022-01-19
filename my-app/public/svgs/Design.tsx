@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import {designSVG} from "../../scripts/script"
+import { designSVG } from "../../scripts/script";
 
 const Design: React.FC = () => {
-
   useEffect(() => {
-    designSVG()
-  }, [])
+    designSVG();
+  }, []);
 
   return (
     <div>
