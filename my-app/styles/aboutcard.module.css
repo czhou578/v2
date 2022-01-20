@@ -1,0 +1,23 @@
+.wrapper {
+  border: 2px solid lightblue;
+  width: 30%;
+  max-width: 50%;
+  position: relative;
+  margin-top: 20%;
+  margin-left: 23%;
+}
+
+.listElements {
+  color: rgba(255, 255, 255) !important;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.imgContainer {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  margin: 10px;
+}
