@@ -13,6 +13,14 @@
 
 .img {
   object-fit: cover;
+  opacity: 0.2;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.img:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .imgContainer {
@@ -20,4 +28,5 @@
   top: 4%;
   right: 2%;
   margin: 10px;
+  background-color: rgb(131, 106, 131);
 }
