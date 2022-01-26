@@ -24,7 +24,9 @@ const Home: NextPage = () => {
           <Design />
           <Programmer />
         </div>
-        <Aboutcard />
+        <div className={styles.aboutCard}>
+          <Aboutcard />
+        </div>
       </main>
 
       <footer className={styles.footer}>

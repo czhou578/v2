@@ -1,6 +1,7 @@
 .wrapper {
   border: 2px solid lightblue;
-  width: 30%;
+  width: 60%;
+  height: 40%;
   max-width: 50%;
   position: relative;
   margin-top: 20%;
@@ -9,6 +10,9 @@
 
 .listElements {
   color: rgba(255, 255, 255) !important;
+  list-style-type: lower-roman;
+  display: inline;
+  margin-left: 20px;
 }
 
 .img {
@@ -25,8 +29,31 @@
 
 .imgContainer {
   position: absolute;
-  top: 4%;
+  top: 2%;
   right: 2%;
   margin: 10px;
   background-color: rgb(131, 106, 131);
 }
+
+.wrapper > div > h3 {
+  color: white;
+  margin-left: 10%;
+  font-size: 1.5rem;
+}
+
+.paragraph {
+  color: white;
+  white-space: pre-wrap;
+  font-size: 1rem;
+}
+
+.paragraphBox {
+  margin-left: 6%;
+  width: 65%;
+}
+
+.skillsHeader {
+  color: white;
+  margin-left: 10%;
+}
+
