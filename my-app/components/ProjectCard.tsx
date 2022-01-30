@@ -1,12 +1,5 @@
-
-
-
 const ProjectCard: React.FC = () => {
-  return (
-    <div>
+  return <div></div>;
+};
 
-    </div>
-  )
-}
-
-export default ProjectCard
+export default ProjectCard;
