@@ -27,6 +27,10 @@ const Home: NextPage = () => {
         <div className={styles.aboutCard}>
           <Aboutcard />
         </div>
+        <div>
+          <h2>Experience</h2>
+          
+        </div>
       </main>
 
       <footer className={styles.footer}>

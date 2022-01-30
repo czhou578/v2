@@ -1,0 +1,12 @@
+
+
+
+const ProjectCard: React.FC = () => {
+  return (
+    <div>
+
+    </div>
+  )
+}
+
+export default ProjectCard
