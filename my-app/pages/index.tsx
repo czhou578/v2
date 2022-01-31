@@ -31,8 +31,8 @@ const Home: NextPage = () => {
         <div>
           <h2>Experience</h2>
           <div className={styles.experience}>
-        <ExperienceContainer />
-      </div>          
+            <ExperienceContainer />
+        </div>          
         </div>
       </main>
 

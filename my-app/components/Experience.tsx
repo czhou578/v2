@@ -1,4 +1,6 @@
-import openCity from '../scripts/tab'
+import dynamic from "next/dynamic";
+import React, { useEffect } from "react";
+import openCity from "../scripts/tab";
 
 const headers = [
   "Project Elpis Intern",
@@ -13,50 +15,50 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
   headers,
   lists,
 }) => {
+  const ref = React.useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    ref!.current!.click();
+  });
 
   return (
     <>
       <div className={"tab"}>
         {headers.map((element, key) => {
-          return (
-            <button
-              className={"tabLinks"}
-              onClick={(e) => openCity(e, element)}
-              key={key}
-            >
-              {element}
-            </button>
-          );
+          if (key == 0) {
+            return (
+              <button
+                className={"tabLinks"}
+                onClick={(e) => openCity(e, element)}
+                key={key}
+                ref={ref}
+              >
+                {element}
+              </button>
+            );
+          } else {
+            return (
+              <button
+                className={"tabLinks"}
+                onClick={(e) => openCity(e, element)}
+                key={key}
+              >
+                {element}
+              </button>
+            );
+          }
         })}
       </div>
 
-        {headers.map((header, key) => {
-          return (
-            <div className={"tabContent"} id={header}>
-              <h3 key={key}>{header}</h3>
-              <div>{lists[key]}</div>
-            </div>
-          );
-        })}
-      
-
-      {/* <div id="London" className={styles.tabContent}>
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-      </div>
-
-      <div id="Paris" className={styles.tabContent}>
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-      </div>
-
-      <div id="Tokyo" className={styles.tabContent}>
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div> */}
-    <script src="../scripts/tab" />
+      {headers.map((header, key) => {
+        return (
+          <div className={"tabContent"} id={header}>
+            <h3 key={key}>{header}</h3>
+            <div>{lists[key]}</div>
+          </div>
+        );
+      })}
     </>
-    
   );
 };
 
