@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import styles from "../styles/experience.module.css";
+import openCity from '../scripts/tab'
 
 const headers = [
   "Project Elpis Intern",
@@ -13,7 +15,7 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
   headers,
   lists,
 }) => {
-  function openCity(event: any, cityName: string) {}
+
 
   return (
     <>
@@ -22,7 +24,7 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
           return (
             <button
               className={styles.tabLinks}
-              onClick={() => openCity}
+              onClick={(e) => openCity(e, element)}
               key={key}
             >
               {element}

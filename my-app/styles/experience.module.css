@@ -26,12 +26,12 @@
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: green;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: purple;
 }
 
 /* Style the tab content */
