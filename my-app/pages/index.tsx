@@ -28,11 +28,9 @@ const Home: NextPage = () => {
         <div className={styles.aboutCard}>
           <Aboutcard />
         </div>
-        <div>
-          <h2>Experience</h2>
-          <div className={styles.experience}>
+        <div className={styles.experience}>
+          <h2 className={styles.expHeader}>Experience</h2>
             <ExperienceContainer />
-        </div>          
         </div>
       </main>
 

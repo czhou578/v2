@@ -76,7 +76,7 @@ const ExperienceList: React.FC<{ elements: string[] }> = ({ elements }) => {
 
 const ExperienceContainer: React.FC = () => {
   return (
-    <div>
+    <div className="experience-container">
       <Experience
         headers={headers}
         lists={[
