@@ -20,10 +20,14 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
       <div className={styles.tab}>
         {headers.map((element, key) => {
           return (
-            <button className={styles.tabLinks} onClick={() => openCity} key={key}>
+            <button
+              className={styles.tabLinks}
+              onClick={() => openCity}
+              key={key}
+            >
               {element}
             </button>
-          )
+          );
         })}
       </div>
 
@@ -121,14 +125,14 @@ const ExperienceContainer: React.FC = () => {
             ]}
           />,
           <ExperienceList
-          elements={[
-            `Helped tutor Cupertino High School sophomores with improving their writing.`,
+            elements={[
+              `Helped tutor Cupertino High School sophomores with improving their writing.`,
 
-            `Assisted Bellevue College classmates with their research papers.`,
+              `Assisted Bellevue College classmates with their research papers.`,
 
-            `Coordinated with high school/college teachers with tutoring progress.`,
-          ]}
-        />,
+              `Coordinated with high school/college teachers with tutoring progress.`,
+            ]}
+          />,
         ]}
       />
     </div>
