@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import styles from "../styles/experience.module.css";
 import openCity from '../scripts/tab'
 
@@ -15,7 +14,6 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
   headers,
   lists,
 }) => {
-
 
   return (
     <>
@@ -58,7 +56,9 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
       </div> */}
+    <script src="../scripts/tab" />
     </>
+    
   );
 };
 
