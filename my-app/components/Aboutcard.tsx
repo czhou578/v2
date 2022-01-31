@@ -2,6 +2,7 @@ import { FC } from "react";
 import styles from "../styles/aboutcard.module.css";
 import Image from "next/image";
 import profilePic from "../public/images/70.jpg";
+import ExperienceContainer from "./Experience";
 
 const SkillsList: FC<{ header?: string; skillsList: string[] }> = ({
   header,
@@ -55,6 +56,9 @@ const Aboutcard: FC = () => {
           header="Skills"
           skillsList={["JavaScript", "HTML", "CSS", "AWS", "React"]}
         />
+      </div>
+      <div className={styles.experience}>
+        <ExperienceContainer />
       </div>
     </div>
   );
