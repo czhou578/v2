@@ -1,4 +1,3 @@
-import styles from "../styles/experience.module.css";
 import openCity from '../scripts/tab'
 
 const headers = [
@@ -17,11 +16,11 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
 
   return (
     <>
-      <div className={styles.tab}>
+      <div className={"tab"}>
         {headers.map((element, key) => {
           return (
             <button
-              className={styles.tabLinks}
+              className={"tabLinks"}
               onClick={(e) => openCity(e, element)}
               key={key}
             >
@@ -31,16 +30,15 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
         })}
       </div>
 
-      <div>
         {headers.map((header, key) => {
           return (
-            <div className={styles.tabContent} id={header}>
+            <div className={"tabContent"} id={header}>
               <h3 key={key}>{header}</h3>
               <div>{lists[key]}</div>
             </div>
           );
         })}
-      </div>
+      
 
       {/* <div id="London" className={styles.tabContent}>
         <h3>London</h3>
