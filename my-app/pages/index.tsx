@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Design from '../public/svgs/Design'
 import Programmer from '../public/svgs/Programmer'
 import Aboutcard from '../components/Aboutcard'
+import ExperienceContainer from '../components/Experience'
 
 const Home: NextPage = () => {
 
@@ -29,7 +30,9 @@ const Home: NextPage = () => {
         </div>
         <div>
           <h2>Experience</h2>
-          
+          <div className={styles.experience}>
+        <ExperienceContainer />
+      </div>          
         </div>
       </main>
 

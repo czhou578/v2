@@ -57,9 +57,7 @@ const Aboutcard: FC = () => {
           skillsList={["JavaScript", "HTML", "CSS", "AWS", "React"]}
         />
       </div>
-      <div className={styles.experience}>
-        <ExperienceContainer />
-      </div>
+
     </div>
   );
 };

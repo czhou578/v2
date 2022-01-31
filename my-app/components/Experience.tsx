@@ -17,22 +17,20 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
 
   return (
     <>
-      <div className="tab">
-        <button className={styles.tablinks} onClick={() => openCity}>
-          London
-        </button>
-        <button className={styles.tablinks} onClick={() => openCity}>
-          Paris
-        </button>
-        <button className={styles.tablinks} onClick={() => openCity}>
-          Tokyo
-        </button>
+      <div className={styles.tab}>
+        {headers.map((element, key) => {
+          return (
+            <button className={styles.tabLinks} onClick={() => openCity} key={key}>
+              {element}
+            </button>
+          )
+        })}
       </div>
 
       <div>
         {headers.map((header, key) => {
           return (
-            <div className={styles.tabContent}>
+            <div className={styles.tabContent} id={header}>
               <h3 key={key}>{header}</h3>
               <div>{lists[key]}</div>
             </div>
