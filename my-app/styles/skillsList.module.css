@@ -1,0 +1,9 @@
+.listElement {
+  color: white;
+  display: inline;
+  margin-left: 2%;
+}
+
+.list {
+  list-style: none;
+}

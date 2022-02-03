@@ -1,0 +1,13 @@
+.container {
+  /* width: 50%; */
+  /* margin: 0 auto; */
+}
+
+.parentContainer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.imgWrapper {
+  margin-top: 10px;
+}
