@@ -8,6 +8,13 @@ import presidentImg2 from "../public/images/Screenshot (43).png";
 import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 
+const test = [
+  `Using the React.js framework, I created a distance tracker that uses an external API 
+  to take two cities in the United States, and calculate their distance and the travel time 
+  in minutes. After each request, the data will be logged in an external form, which I took 
+  from Material UI.`
+]
+
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
   header,
@@ -64,10 +71,7 @@ const ProjectCardContainer: React.FC = () => {
         description={
           <ProjectDescription
             header="DistanceCalc"
-            elucidation={`Using the React.js framework, I created a distance tracker that uses an external API 
-        to take two cities in the United States, and calculate their distance and the travel time 
-        in minutes. After each request, the data will be logged in an external form, which I took 
-        from Material UI.`}
+            elucidation={test[0]}
           />
         }
       />

@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: end;
   /* width: 50%; */
   /* margin: 0 auto; */
 }
@@ -18,6 +17,10 @@
 
 .imgWrapper {
   margin-top: 10px;
+}
+
+.parentWrapper {
+  margin-left: 0% !important;
 }
 
 .projDescript {
