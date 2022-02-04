@@ -7,3 +7,9 @@
 .list {
   list-style: none;
 }
+
+.container {
+  position: absolute;
+  top: 20%
+  /* bottom: 40%; */
+}

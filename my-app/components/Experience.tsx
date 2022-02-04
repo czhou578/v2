@@ -1,15 +1,15 @@
 /* eslint-disable react/jsx-key */
-import dynamic from 'next/dynamic';
-import React, { useEffect } from 'react';
-import openCity from '../scripts/tab';
+import dynamic from "next/dynamic";
+import React, { useEffect } from "react";
+import openCity from "../scripts/tab";
 
 const headers = [
-  'Project Elpis Intern',
-  'Endevre Technologies',
-  'Self-Employed',
-  'Quora',
-  'Upwork Freelancer',
-  'Writing Tutor',
+  "Project Elpis Intern",
+  "Endevre Technologies",
+  "Self-Employed",
+  "Quora",
+  "Upwork Freelancer",
+  "Writing Tutor",
 ];
 
 const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
@@ -24,12 +24,12 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
 
   return (
     <>
-      <div className={'tab'}>
+      <div className={"tab"}>
         {headers.map((element, key) => {
           if (key === 0) {
             return (
               <button
-                className={'tabLinks'}
+                className={"tabLinks"}
                 onClick={(e) => openCity(e, element)}
                 key={key}
                 ref={ref}
@@ -40,7 +40,7 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
           } else {
             return (
               <button
-                className={'tabLinks'}
+                className={"tabLinks"}
                 onClick={(e) => openCity(e, element)}
                 key={key}
               >
@@ -53,7 +53,7 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
 
       {headers.map((header, key) => {
         return (
-          <div className={'tabContent'} id={header} key={key}>
+          <div className={"tabContent"} id={header} key={key}>
             <h3 key={key}>{header}</h3>
             <div>{lists[key]}</div>
           </div>

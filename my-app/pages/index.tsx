@@ -33,7 +33,8 @@ const Home: NextPage = () => {
           <h2 className={styles.expHeader}>Experience</h2>
             <ExperienceContainer />
         </div>
-        <div>
+        <div className={styles.projects}>
+          <h2 className={styles.expHeader}>My Projects</h2>
           <ProjectCardContainer />
         </div>
       </main>

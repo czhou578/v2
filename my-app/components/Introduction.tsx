@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import styles from '../styles/introduction.module.css';
+import React, { FC } from "react";
+import styles from "../styles/introduction.module.css";
 
 const Introduction: FC = () => {
   return (
@@ -9,7 +9,8 @@ const Introduction: FC = () => {
       <h3>
         <div className={styles.c1}>
           <div className={styles.description}>
-            I&apos;m a developer and hobbyist designer based in Issaquah, Washington.
+            I&apos;m a developer and hobbyist designer based in Issaquah,
+            Washington.
           </div>
         </div>
         <br></br>

@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import styles from '../styles/aboutcard.module.css';
-import Image from 'next/image';
-import profilePic from '../public/images/70.jpg';
-import ExperienceContainer from './Experience';
+import { FC } from "react";
+import styles from "../styles/aboutcard.module.css";
+import Image from "next/image";
+import profilePic from "../public/images/70.jpg";
+import ExperienceContainer from "./Experience";
 
 const SkillsList: FC<{ header?: string; skillsList: string[] }> = ({
   header,
@@ -54,7 +54,7 @@ const Aboutcard: FC = () => {
       <div>
         <SkillsList
           header="Skills"
-          skillsList={['JavaScript', 'HTML', 'CSS', 'AWS', 'React']}
+          skillsList={["JavaScript", "HTML", "CSS", "AWS", "React"]}
         />
       </div>
     </div>
