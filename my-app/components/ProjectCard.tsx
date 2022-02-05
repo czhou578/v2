@@ -9,10 +9,7 @@ import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 
 const test = [
-  `Using the React.js framework, I created a distance tracker that uses an external API 
-  to take two cities in the United States, and calculate their distance and the travel time 
-  in minutes. After each request, the data will be logged in an external form, which I took 
-  from Material UI.`
+  `Using the React.js framework, I created a distance tracker that uses an external API to take two cities in the United States, and calculate their distance and the travel time in minutes. After each request, the data will be logged in an external form, which I took from Material UI.`
 ]
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
@@ -22,7 +19,8 @@ const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   return (
     <div className={styles2.textwrap}>
       <h3 className={styles2.headers}>{header}</h3>
-      <pre className={styles2.projDescript}>{elucidation}</pre>
+      {/* {elucidation} */}
+      <p className={styles2.projDescript}>{elucidation}</p>
     </div>
   );
 };

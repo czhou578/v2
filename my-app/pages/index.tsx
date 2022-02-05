@@ -37,6 +37,9 @@ const Home: NextPage = () => {
           <h2 className={styles.expHeader}>My Projects</h2>
           <ProjectCardContainer />
         </div>
+        <div>
+          
+        </div>
       </main>
 
       <footer className={styles.footer}>

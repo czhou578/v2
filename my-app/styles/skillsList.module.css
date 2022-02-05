@@ -6,10 +6,12 @@
 
 .list {
   list-style: none;
+  white-space: nowrap;
 }
 
 .container {
   position: absolute;
-  top: 20%
+  top: 60%;
+  left: 20%;
   /* bottom: 40%; */
 }

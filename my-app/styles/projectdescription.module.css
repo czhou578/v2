@@ -1,5 +1,9 @@
 .projDescript {
   color: white;
+  /* white-space: pre-line; */
+  /* display: inline; */
+  /* display: inline; */
+  /* margin: 0 auto; */
 }
 
 .headers {
@@ -9,5 +13,6 @@
 
 .textwrap {
   margin-left: 20%;
+  margin-top: 15%;
 }
 
