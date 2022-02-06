@@ -10,6 +10,11 @@
 
 .container:nth-child(2n) {
   flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.container:nth-child(2n) .explain {
+  padding-right: 20px;
 }
 
 .explain {

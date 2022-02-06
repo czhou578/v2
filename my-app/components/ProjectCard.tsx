@@ -5,6 +5,16 @@ import DistanceImg1 from "../public/images/Screenshot (36).png";
 import DistanceImg2 from "../public/images/Screenshot (35).png";
 import presidentImg1 from "../public/images/Screenshot (44).png";
 import presidentImg2 from "../public/images/Screenshot (43).png";
+import CWwebsite1 from "../public/images/CW1.png"
+import CWebsite2 from "../public/images/CW2.png"
+import Wordament1 from "../public/images/W1.png"
+import Wordament2 from "../public/images/W2.png"
+import YoutubeImage1 from "../public/images/YT.png"
+import YoutubeImage2 from "../public/images/YT2.png"
+import UIDesign1 from "../public/images/UIDesign1.png"
+import UIDesign2 from "../public/images/UIDesign2.png"
+
+
 import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 import { dcParagraph, ayParagraph, cwParagraph, wParagraph, youtubeParagraph, UIParagraph } from "./Descriptions";
@@ -100,7 +110,7 @@ const ProjectCardContainer: React.FC = () => {
         }
       />
       <ProjectCard
-        img={[presidentImg1, presidentImg2]}
+        img={[CWwebsite1,CWebsite2]}
         list={
           <ProjectSkillsList
             skills={[
@@ -121,7 +131,7 @@ const ProjectCardContainer: React.FC = () => {
       />
 
       <ProjectCard
-        img={[presidentImg1, presidentImg2]}
+        img={[Wordament1, Wordament2]}
         list={
           <ProjectSkillsList
             skills={[
@@ -141,7 +151,7 @@ const ProjectCardContainer: React.FC = () => {
       />
 
       <ProjectCard
-        img={[presidentImg1, presidentImg2]}
+        img={[YoutubeImage1, YoutubeImage2]}
         list={
           <ProjectSkillsList
             skills={[
@@ -159,7 +169,7 @@ const ProjectCardContainer: React.FC = () => {
         }
       />
       <ProjectCard
-        img={[presidentImg1, presidentImg2]}
+        img={[UIDesign1, UIDesign2]}
         list={
           <ProjectSkillsList
             skills={[
@@ -176,7 +186,6 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
       />
-
     </div>
   );
 };

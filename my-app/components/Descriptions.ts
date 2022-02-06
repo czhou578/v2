@@ -9,12 +9,14 @@ US President in 2024.`
 export const cwParagraph = `I created a mockup of a possible future cryptocurrency website, which helped me practice
 CSS animations. `
 
-export const wParagraph = `I created my own version of the popular Microsoft game Wordament. Users are to swipe with a mouse
-to create words using the provided alphabet letters, and are awarded a specific amount of points
-depending on whether a guess results in a word.`
+export const wParagraph = `I created my own version of the popular Microsoft game Wordament. Users are to 
+swipe with a mouse to create words using the provided alphabet letters, and are awarded a 
+specific amount of points depending on whether a guess results in a word.`
 
 export const youtubeParagraph = `A way to block distractions on YouTube. Using this blocker,
 users will be able to cover up the recommended videos section,
 allowing for less distractions and greater concentration on tasks.`
 
-export const UIParagraph = `I created designs with an emphasis on futuristic looking UI.`
+export const UIParagraph = `I created designs with an emphasis on futuristic looking UI, focusing on
+possible practical applications for the future. I feel like I've learned a tremendous amount about
+how designers think through these self designed exercises.`
