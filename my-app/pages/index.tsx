@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           <ProjectCardContainer />
         </div>
         <div>
-          
+
         </div>
       </main>
 

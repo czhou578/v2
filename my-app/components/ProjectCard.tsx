@@ -7,21 +7,23 @@ import presidentImg1 from "../public/images/Screenshot (44).png";
 import presidentImg2 from "../public/images/Screenshot (43).png";
 import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
+import { dcParagraph, ayParagraph } from "./Descriptions";
 
-const test = [
-  `Using the React.js framework, I created a distance tracker that uses an external API to take two cities in the United States, and calculate their distance and the travel time in minutes. After each request, the data will be logged in an external form, which I took from Material UI.`
+const elucidations = [
+  dcParagraph,
+  ayParagraph
 ]
+
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
   header,
 }) => {
   return (
-    <div className={styles2.textwrap}>
+    <>
       <h3 className={styles2.headers}>{header}</h3>
-      {/* {elucidation} */}
-      <p className={styles2.projDescript}>{elucidation}</p>
-    </div>
+      {elucidation}
+    </>
   );
 };
 
@@ -69,7 +71,7 @@ const ProjectCardContainer: React.FC = () => {
         description={
           <ProjectDescription
             header="DistanceCalc"
-            elucidation={test[0]}
+            elucidation={elucidations[0]}
           />
         }
       />
@@ -89,9 +91,7 @@ const ProjectCardContainer: React.FC = () => {
         description={
           <ProjectDescription
             header="Whitehouse.gov 2025"
-            elucidation={`This project was a playground for me to practice my designing skills while imagining
-         what a future of the whitehouse.gov website would look like if Andrew Yang got elected as the
-         US President in 2024.`}
+            elucidation={elucidations[1]}
           />
         }
       />

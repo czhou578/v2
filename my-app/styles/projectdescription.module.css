@@ -1,18 +1,14 @@
 .projDescript {
   color: white;
-  /* white-space: pre-line; */
-  /* display: inline; */
-  /* display: inline; */
-  /* margin: 0 auto; */
 }
 
 .headers {
   color: white !important;
   font-size: 20px;
+  /* display: inline-block; */
 }
 
 .textwrap {
-  margin-left: 20%;
-  margin-top: 15%;
+
 }
 

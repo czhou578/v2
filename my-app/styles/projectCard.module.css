@@ -1,15 +1,16 @@
 .container {
   position: relative;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   border: 2px solid salmon !important;
-  display: inline-block;
-  /* width: 50%; */
-  /* margin: 0 auto; */
+  justify-content: center;
+  max-width: 1300px;
 }
 
 .explain {
-  position: relative;
+  margin-left: 10%;
+  margin-top: 15%;
+  max-width: 800px;
 }
 
 .parentContainer {
@@ -19,6 +20,7 @@
 
 .imgWrapper {
   margin-top: 10px;
+  width: max-content;
 }
 
 .parentWrapper {
@@ -31,4 +33,8 @@
 
 .photos {
   flex-grow: 2;
+}
+
+.white {
+  color: white;
 }
