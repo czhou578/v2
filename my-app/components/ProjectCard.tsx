@@ -7,11 +7,15 @@ import presidentImg1 from "../public/images/Screenshot (44).png";
 import presidentImg2 from "../public/images/Screenshot (43).png";
 import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
-import { dcParagraph, ayParagraph } from "./Descriptions";
+import { dcParagraph, ayParagraph, cwParagraph, wParagraph, youtubeParagraph, UIParagraph } from "./Descriptions";
 
 const elucidations = [
   dcParagraph,
-  ayParagraph
+  ayParagraph,
+  cwParagraph,
+  wParagraph,
+  youtubeParagraph,
+  UIParagraph
 ]
 
 
@@ -95,6 +99,84 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
       />
+      <ProjectCard
+        img={[presidentImg1, presidentImg2]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "HTML/CSS",
+              "JavaScript",
+              "Bootstrap",
+              "Figma",
+              "Firebase",
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Crypto Website"
+            elucidation={elucidations[2]}
+          />
+        }
+      />
+
+      <ProjectCard
+        img={[presidentImg1, presidentImg2]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "HTML/CSS",
+              "TypeScript",
+              "React.js",
+              "Netlify",
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Wordament"
+            elucidation={elucidations[3]}
+          />
+        }
+      />
+
+      <ProjectCard
+        img={[presidentImg1, presidentImg2]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "VSCode",
+              "Google Chrome API",
+              "CSS"
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Crypto Website"
+            elucidation={elucidations[4]}
+          />
+        }
+      />
+      <ProjectCard
+        img={[presidentImg1, presidentImg2]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "Figma",
+              "Dribbble",
+              "Google Images of Futuristic Designs",
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Self Made Designs"
+            elucidation={elucidations[5]}
+          />
+        }
+      />
+
     </div>
   );
 };
