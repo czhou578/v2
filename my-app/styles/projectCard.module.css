@@ -5,6 +5,11 @@
   border: 2px solid salmon !important;
   justify-content: center;
   max-width: 1300px;
+  margin-top: 20px;
+}
+
+.container:nth-child(2n) {
+  flex-direction: row-reverse;
 }
 
 .explain {
