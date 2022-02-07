@@ -20,3 +20,8 @@ allowing for less distractions and greater concentration on tasks.`
 export const UIParagraph = `I created designs with an emphasis on futuristic looking UI, focusing on
 possible practical applications for the future. I feel like I've learned a tremendous amount about
 how designers think through these self designed exercises.`
+
+export const ElpisParagraph = `I helped create an educational web app that helps at risk high school 
+students track their future career goals. I utilized various front end technologies like React.js 
+along with backend tools like AWS for hosting. After the internship was completed, this app is now in
+beta testing in a high school of a couple hundred students in New York City.`

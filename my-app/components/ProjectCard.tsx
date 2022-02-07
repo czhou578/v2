@@ -1,4 +1,3 @@
-import { ImageProps } from "next/image";
 import Image from "next/image";
 import ProjectSkillsList from "./ProjectSkillsList";
 import DistanceImg1 from "../public/images/Screenshot (36).png";
@@ -11,11 +10,11 @@ import Wordament1 from "../public/images/W1.png"
 import Wordament2 from "../public/images/W2.png"
 import YoutubeImage1 from "../public/images/YT.png"
 import YoutubeImage2 from "../public/images/YT2.png"
-import UIDesign1 from "../public/images/UIDesign1.png"
-import UIDesign2 from "../public/images/UIDesign2.png"
+import Elpis1 from "../public/images/PE1.png"
+import Elpis2 from "../public/images/PE2.png"
 import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
-import { dcParagraph, ayParagraph, cwParagraph, wParagraph, youtubeParagraph, UIParagraph } from "./Descriptions";
+import { dcParagraph, ayParagraph, cwParagraph, wParagraph, youtubeParagraph, UIParagraph, ElpisParagraph } from "./Descriptions";
 import LinkIcon from '@mui/icons-material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -25,7 +24,7 @@ const elucidations = [
   cwParagraph,
   wParagraph,
   youtubeParagraph,
-  UIParagraph
+  ElpisParagraph
 ]
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
@@ -71,6 +70,27 @@ const ProjectCard: React.FC<{
 const ProjectCardContainer: React.FC = () => {
   return (
     <div className={styles.parentWrapper}>
+      <ProjectCard
+        img={[Elpis1, Elpis2]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "HTML/CSS",
+              "JavaScript",
+              "React.js",
+              "Semantic UI",
+              "AWS",
+              "Adobe XD"
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Project Elpis App"
+            elucidation={elucidations[5]}
+          />
+        }
+      />      
       <ProjectCard
         img={[DistanceImg1, DistanceImg2]}
         list={
@@ -171,7 +191,7 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
       />
-      <ProjectCard
+      {/* <ProjectCard
         img={[UIDesign1, UIDesign2]}
         list={
           <ProjectSkillsList
@@ -188,7 +208,7 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[5]}
           />
         }
-      />
+      /> */}
     </div>
   );
 };

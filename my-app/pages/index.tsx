@@ -8,6 +8,7 @@ import Programmer from '../public/svgs/Programmer'
 import Aboutcard from '../components/Aboutcard'
 import ExperienceContainer from '../components/Experience'
 import ProjectCardContainer from '../components/ProjectCard'
+import DesignsContainer from '../components/DesignsContainer'
 
 const Home: NextPage = () => {
 
@@ -37,8 +38,9 @@ const Home: NextPage = () => {
           <h2 className={styles.expHeader}>My Projects</h2>
           <ProjectCardContainer />
         </div>
-        <div>
-
+        <div className={styles.designs}>
+          <h2>My Designs</h2>
+          <DesignsContainer />
         </div>
       </main>
 
