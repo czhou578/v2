@@ -13,11 +13,11 @@ import YoutubeImage1 from "../public/images/YT.png"
 import YoutubeImage2 from "../public/images/YT2.png"
 import UIDesign1 from "../public/images/UIDesign1.png"
 import UIDesign2 from "../public/images/UIDesign2.png"
-
-
 import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 import { dcParagraph, ayParagraph, cwParagraph, wParagraph, youtubeParagraph, UIParagraph } from "./Descriptions";
+import LinkIcon from '@mui/icons-material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const elucidations = [
   dcParagraph,
@@ -27,7 +27,6 @@ const elucidations = [
   youtubeParagraph,
   UIParagraph
 ]
-
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
@@ -60,6 +59,10 @@ const ProjectCard: React.FC<{
       <div className={styles.explain}>
         {description}
         {list}
+      <div className={styles.iconWrapper}>
+        <LinkIcon className={styles.link}/>
+        <GitHubIcon />
+      </div>
       </div>
     </div>
   );

@@ -48,3 +48,15 @@
 .white {
   color: white;
 }
+
+.iconsWrapper {
+  display: inline-block;
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  padding: 15px;
+}
+
+.link {
+  margin-right: 4%;
+}

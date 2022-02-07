@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { programmerSVG } from "../../scripts/script";
 import styles from '../../styles/svg.module.css'
+import Script from "next/script";
 
 const Programmer: React.FC = () => {
   useEffect(() => {
@@ -9,10 +10,10 @@ const Programmer: React.FC = () => {
 
   return (
     <div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"></script>
-      <script src="gsap-public\minified\gsap.min.js"></script>
-      <script src="gsap-public\minified\MotionPathPlugin.min.js"></script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" strategy="beforeInteractive"/>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js" strategy="beforeInteractive"/>
+      <Script src="gsap-public\minified\gsap.min.js" strategy="beforeInteractive"/>
+      <Script src="gsap-public\minified\MotionPathPlugin.min.js" strategy="beforeInteractive"/>
       <div className="icon-2">
         <svg
           width="549"
