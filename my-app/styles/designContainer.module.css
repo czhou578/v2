@@ -1,5 +1,28 @@
 .wrapper {
-  padding: 8rem 0 0;
-  max-width: 35ch;
+  position: relative;
+  margin-left: 30px;
+}
+
+.designContainer {
+  margin-top: 200px;
+}
+
+.elpisWrapper {
+  margin-right: 30%;
+  display: flex;
+}
+
+.foodWrapper {
+  /* margin-right: 40%; */
+  display: flex;
+}
+
+.uiWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bcWrapper {
+  display: flex;
 }
 
