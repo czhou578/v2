@@ -4,19 +4,27 @@ import DistanceImg1 from "../public/images/Screenshot (36).png";
 import DistanceImg2 from "../public/images/Screenshot (35).png";
 import presidentImg1 from "../public/images/Screenshot (44).png";
 import presidentImg2 from "../public/images/Screenshot (43).png";
-import CWwebsite1 from "../public/images/CW1.png"
-import CWebsite2 from "../public/images/CW2.png"
-import Wordament1 from "../public/images/W1.png"
-import Wordament2 from "../public/images/W2.png"
-import YoutubeImage1 from "../public/images/YT.png"
-import YoutubeImage2 from "../public/images/YT2.png"
-import Elpis1 from "../public/images/PE1.png"
-import Elpis2 from "../public/images/PE2.png"
+import CWwebsite1 from "../public/images/CW1.png";
+import CWebsite2 from "../public/images/CW2.png";
+import Wordament1 from "../public/images/W1.png";
+import Wordament2 from "../public/images/W2.png";
+import YoutubeImage1 from "../public/images/YT.png";
+import YoutubeImage2 from "../public/images/YT2.png";
+import Elpis1 from "../public/images/PE1.png";
+import Elpis2 from "../public/images/PE2.png";
 import styles from "../styles/ProjectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
-import { dcParagraph, ayParagraph, cwParagraph, wParagraph, youtubeParagraph, UIParagraph, ElpisParagraph } from "./Descriptions";
-import LinkIcon from '@mui/icons-material/Link';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import {
+  dcParagraph,
+  ayParagraph,
+  cwParagraph,
+  wParagraph,
+  youtubeParagraph,
+  UIParagraph,
+  ElpisParagraph,
+} from "./Descriptions";
+import LinkIcon from "@mui/icons-material/Link";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const elucidations = [
   dcParagraph,
@@ -24,8 +32,8 @@ const elucidations = [
   cwParagraph,
   wParagraph,
   youtubeParagraph,
-  ElpisParagraph
-]
+  ElpisParagraph,
+];
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
@@ -58,10 +66,10 @@ const ProjectCard: React.FC<{
       <div className={styles.explain}>
         {description}
         {list}
-      <div className={styles.iconWrapper}>
-        <LinkIcon className={styles.link}/>
-        <GitHubIcon />
-      </div>
+        <div className={styles.iconWrapper}>
+          <LinkIcon className={styles.link} />
+          <GitHubIcon />
+        </div>
       </div>
     </div>
   );
@@ -80,7 +88,7 @@ const ProjectCardContainer: React.FC = () => {
               "React.js",
               "Semantic UI",
               "AWS",
-              "Adobe XD"
+              "Adobe XD",
             ]}
           />
         }
@@ -90,7 +98,7 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[5]}
           />
         }
-      />      
+      />
       <ProjectCard
         img={[DistanceImg1, DistanceImg2]}
         list={
@@ -133,7 +141,7 @@ const ProjectCardContainer: React.FC = () => {
         }
       />
       <ProjectCard
-        img={[CWwebsite1,CWebsite2]}
+        img={[CWwebsite1, CWebsite2]}
         list={
           <ProjectSkillsList
             skills={[
@@ -157,12 +165,7 @@ const ProjectCardContainer: React.FC = () => {
         img={[Wordament1, Wordament2]}
         list={
           <ProjectSkillsList
-            skills={[
-              "HTML/CSS",
-              "TypeScript",
-              "React.js",
-              "Netlify",
-            ]}
+            skills={["HTML/CSS", "TypeScript", "React.js", "Netlify"]}
           />
         }
         description={
@@ -176,13 +179,7 @@ const ProjectCardContainer: React.FC = () => {
       <ProjectCard
         img={[YoutubeImage1, YoutubeImage2]}
         list={
-          <ProjectSkillsList
-            skills={[
-              "VSCode",
-              "Google Chrome API",
-              "CSS"
-            ]}
-          />
+          <ProjectSkillsList skills={["VSCode", "Google Chrome API", "CSS"]} />
         }
         description={
           <ProjectDescription
