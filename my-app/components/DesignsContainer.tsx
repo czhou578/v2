@@ -15,7 +15,7 @@ import styles from "../styles/designContainer.module.css";
 const DesignCard: React.FC<{ img: StaticImageData }> = ({ img }) => {
   return (
     <div className={styles.wrapper}>
-      <Image src={img} alt="Image" width="600px" height="500px" objectFit="contain"/>
+      <Image src={img} alt="Image" width="6 00px" height="500px" objectFit="contain"/>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, perferendis veritatis itaque aliquid sunt provident.</p>
     </div>
   );
@@ -28,6 +28,10 @@ const DesignsContainer: React.FC = () => {
         <DesignCard img={FoodApp1} />
         <DesignCard img={FoodApp2} />
       </div>
+      <div className={styles.elpisWrapper}>
+        <DesignCard img={ElpisUI1} />
+        <DesignCard img={ElpisUI2} />
+      </div>
       <div className={styles.uiWrapper}>
         <p></p>
         <DesignCard img={UIDesign1} />
@@ -39,10 +43,6 @@ const DesignsContainer: React.FC = () => {
         <DesignCard img={BCollege1} />
         <DesignCard img={BCollege2} />
       </div>
-      {/* <div className={styles.elpisWrapper}>
-        <DesignCard img={ElpisUI1} />
-        <DesignCard img={ElpisUI2} />
-      </div> */}
     </div>
   );
 };

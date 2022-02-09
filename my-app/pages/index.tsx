@@ -9,6 +9,7 @@ import Aboutcard from '../components/Aboutcard'
 import ExperienceContainer from '../components/Experience'
 import ProjectCardContainer from '../components/ProjectCard'
 import DesignsContainer from '../components/DesignsContainer'
+import MediaLinks from '../components/MediaLinks'
 
 const Home: NextPage = () => {
 
@@ -41,6 +42,10 @@ const Home: NextPage = () => {
         <div className={styles.designs}>
           <h2>My Designs</h2>
           <DesignsContainer />
+        </div>
+        <div className={styles.icons}>
+          <h2>Where to reach me</h2>
+          <MediaLinks />
         </div>
       </main>
 
