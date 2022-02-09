@@ -15,8 +15,17 @@ import styles from "../styles/designContainer.module.css";
 const DesignCard: React.FC<{ img: StaticImageData }> = ({ img }) => {
   return (
     <div className={styles.wrapper}>
-      <Image src={img} alt="Image" width="6 00px" height="500px" objectFit="contain"/>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, perferendis veritatis itaque aliquid sunt provident.</p>
+      <Image
+        src={img}
+        alt="Image"
+        width="6 00px"
+        height="500px"
+        objectFit="contain"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
+        perferendis veritatis itaque aliquid sunt provident.
+      </p>
     </div>
   );
 };

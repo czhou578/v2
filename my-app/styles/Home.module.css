@@ -31,6 +31,13 @@
 .icons {
   background-color: black;
   width: 50%;
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 100px;
+}
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
 }

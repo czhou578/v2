@@ -48,9 +48,10 @@ const Home: NextPage = () => {
           <MediaLinks />
         </div>
       </main>
-
       <footer className={styles.footer}>
-
+        <div>
+          <p>all work &copy; Colin Zhou 2020-present - all rights reserved</p>
+        </div>
       </footer>
     </div>
   )
