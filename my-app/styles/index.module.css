@@ -24,8 +24,16 @@
 }
 
 .designs {
+  margin-top: 50px;
   margin-left: 15%;
-  margin-bottom: 30%;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.designHeader {
+  position: absolute;
+  top: -4%;
+  left: 3%;
 }
 
 .icons {

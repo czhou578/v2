@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import HeaderBar from '../components/HeaderBar'
 import Introduction from '../components/Introduction'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/index.module.css'
 import Design from '../public/svgs/Design'
 import Programmer from '../public/svgs/Programmer'
 import Aboutcard from '../components/Aboutcard'
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           <ProjectCardContainer />
         </div>
         <div className={styles.designs}>
-          <h2>My Designs</h2>
+          <h2 className={styles.designHeader}>My Designs</h2>
           <DesignsContainer />
         </div>
         <div className={styles.icons}>

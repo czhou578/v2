@@ -51,7 +51,9 @@ const ProjectCard: React.FC<{
   img: StaticImageData[];
   list: JSX.Element;
   description: JSX.Element;
-}> = ({ img, list, description }) => {
+  chromeBlocker?: boolean;
+  projectElpis?: boolean;
+}> = ({ img, list, description, chromeBlocker, projectElpis }) => {
   return (
     <div className={styles.container}>
       <div className={styles.photos}>
@@ -66,10 +68,16 @@ const ProjectCard: React.FC<{
       <div className={styles.explain}>
         {description}
         {list}
-        <div className={styles.iconWrapper}>
-          <LinkIcon className={styles.link} />
-          <GitHubIcon />
-        </div>
+        {chromeBlocker || projectElpis ? (
+          <div className={styles.iconWrapper}>
+            <GitHubIcon />
+          </div>
+        ) : (
+          <div className={styles.iconWrapper}>
+            <LinkIcon className={styles.link} />
+            <GitHubIcon />
+          </div>
+        )}
       </div>
     </div>
   );
@@ -78,6 +86,29 @@ const ProjectCard: React.FC<{
 const ProjectCardContainer: React.FC = () => {
   return (
     <div className={styles.parentWrapper}>
+      {/* <ProjectCard
+        img={[Elpis1, Elpis2]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "HTML/CSS",
+              "JavaScript",
+              "React.js",
+              "Semantic UI",
+              "AWS",
+              "Adobe XD",
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Project Elpis App"
+            elucidation={elucidations[5]}
+          />
+        }
+        projectElpis={true}
+      /> */}
+
       <ProjectCard
         img={[Elpis1, Elpis2]}
         list={
@@ -98,6 +129,7 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[5]}
           />
         }
+        projectElpis={true}
       />
       <ProjectCard
         img={[DistanceImg1, DistanceImg2]}
@@ -183,10 +215,11 @@ const ProjectCardContainer: React.FC = () => {
         }
         description={
           <ProjectDescription
-            header="Crypto Website"
+            header="YouTube Blocker"
             elucidation={elucidations[4]}
           />
         }
+        chromeBlocker={true}
       />
       {/* <ProjectCard
         img={[UIDesign1, UIDesign2]}

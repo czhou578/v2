@@ -18,7 +18,7 @@ const DesignCard: React.FC<{ img: StaticImageData }> = ({ img }) => {
       <Image
         src={img}
         alt="Image"
-        width="6 00px"
+        width="600px"
         height="500px"
         objectFit="contain"
       />
