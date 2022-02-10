@@ -1,22 +1,36 @@
-.navbarWrapper {
-  float: right;
-}
-
-.taskbar {
+.navbar {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   float: left;
-  margin-right: 1300px;
-  margin-top: 10px;
+  margin: 0.5rem;
+}
+
+.taskbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .listItem {
-  float: right;
+  list-style-type: none;
 }
+
+.listItem a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  display: block;
+}
+
+.listItem > a {
+  color: white;
+}
+
 
 .listItem > a:hover {
   color: rgb(177, 177, 151);
@@ -42,14 +56,3 @@
   order: 5;
 }
 
-.listItem a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.listItem > a {
-  color: white;
-}
