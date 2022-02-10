@@ -3,3 +3,7 @@ i {
   width: 50px;
   cursor: pointer;
 }
+
+.mediaLinksContainer {
+  margin-left: 33%;
+}

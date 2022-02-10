@@ -29,11 +29,15 @@
 }
 
 .icons {
-  background-color: black;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  padding-right: auto;
   margin-bottom: 100px;
+}
+
+.icons > h2 {
+  margin-left: 35%;
 }
 
 .footer {

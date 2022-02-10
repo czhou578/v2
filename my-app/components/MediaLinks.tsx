@@ -2,7 +2,7 @@ import Script from "next/script";
 
 const MediaLinks: React.FC = () => {
   return (
-    <div>
+    <div className="mediaLinksContainer">
       <Script
         src="https://kit.fontawesome.com/8be8acb73b.js"
         crossOrigin="anonymous"
