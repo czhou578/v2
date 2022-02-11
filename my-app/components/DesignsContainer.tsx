@@ -12,7 +12,7 @@ import FoodApp2 from "../public/images/FoodApp2.png";
 import Image from "next/image";
 import styles from "../styles/designContainer.module.css";
 
-const DesignCard: React.FC<{ img: StaticImageData }> = ({ img }) => {
+const DesignCard: React.FC<{ img: StaticImageData, description: string }> = ({ img, description }) => {
   return (
     <div className={styles.wrapper}>
       <Image
