@@ -17,8 +17,20 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: ["ts-loader"]
-      }
-    ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif|pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+            },
+    ],
+    type: 'javascript/auto'
   },
   resolve: {
     extensions: [".tsx,", ".css", ".pdf", ".js"], 
