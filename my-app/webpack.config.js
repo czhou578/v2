@@ -1,3 +1,5 @@
+const CopyPlugin = require("copy-webpack-plugin");
+
 module.exports = {
   entry: __dirname + "/../pages/api/index.tsx",
   module: {
@@ -18,19 +20,7 @@ module.exports = {
         test: /\.tsx?$/,
         use: ["ts-loader"]
       },
-      {
-        test: /\.(png|svg|jpg|gif|pdf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]'
-            }
-          }
-        ]
-      },
     ],
-    type: 'javascript/auto'
   },
   resolve: {
     extensions: [".tsx,", ".css", ".pdf", ".js"], 
@@ -41,6 +31,20 @@ module.exports = {
     compress: true,
     port: 3000,
     historyApiFallback: true
-  }
+  },
 
+  output: {
+    filename: "[name].[contenthash].js",
+    publicPath: "/",
+  },
+
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: "resume", to: "resume" },
+        { from: "resume/resume.pdf", to: "/resume.pdf"}
+      ]
+    })
+  ]
 }
+
