@@ -1,4 +1,5 @@
 const CopyPlugin = require("copy-webpack-plugin");
+const WriteFilePlugin = require('write-file-webpack-plugin');
 
 module.exports = {
   entry: __dirname + "/../pages/api/index.tsx",
@@ -23,7 +24,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx,", ".css", ".pdf", ".js"], 
+    extensions: [".tsx,", ".css", ".js"], 
   },
   target: "web",
   devTool: "inline-source-map",
@@ -35,16 +36,8 @@ module.exports = {
 
   output: {
     filename: "[name].[contenthash].js",
-    publicPath: "/",
+    publicPath: __dirname + "/dist",
   },
 
-  plugins: [
-    new CopyPlugin({
-      patterns: [
-        { from: "resume", to: "resume" },
-        { from: "resume/resume.pdf", to: "/resume.pdf"}
-      ]
-    })
-  ]
 }
 
