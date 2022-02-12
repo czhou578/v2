@@ -53,6 +53,7 @@ const Home: NextPage = () => {
           <p>all work &copy; Colin Zhou 2020-present - all rights reserved</p>
         </div>
       </footer>
+      <div id='headerbar'></div>
     </div>
   )
 }
