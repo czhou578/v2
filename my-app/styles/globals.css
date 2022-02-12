@@ -18,3 +18,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 7px;
+  background: white;
+  width: 10%;
+  z-index: 100;
+}

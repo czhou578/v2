@@ -10,8 +10,15 @@ import ExperienceContainer from '../components/Experience'
 import ProjectCardContainer from '../components/ProjectCard'
 import DesignsContainer from '../components/DesignsContainer'
 import MediaLinks from '../components/MediaLinks'
+import { useEffect } from 'react'
+import { animateProgressBar } from '../scripts/headerbar'
 
 const Home: NextPage = () => {
+
+  useEffect(() => {
+    animateProgressBar()
+    window.addEventListener('scroll', animateProgressBar)
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -21,39 +28,42 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <HeaderBar />
-        <div>
-          <Introduction />
-        </div>
-        <div className={styles.svgContainer}>
-          <Design />
-          <Programmer />
-        </div>
-        <div className={styles.aboutCard}>
-          <Aboutcard />
-        </div>
-        <div className={styles.experience}>
-          <h2 className={styles.expHeader}>Experience</h2>
-            <ExperienceContainer />
-        </div>
-        <div className={styles.projects}>
-          <h2 className={styles.expHeader}>My Projects</h2>
-          <ProjectCardContainer />
-        </div>
-        <div className={styles.designs}>
-          <h2 className={styles.designHeader}>My Designs</h2>
-          <DesignsContainer />
-        </div>
-        <div className={styles.icons}>
-          <h2>Where to reach me</h2>
-          <MediaLinks />
-        </div>
+        <section>
+          <div>
+            <Introduction />
+          </div>
+          <div className={styles.svgContainer}>
+            <Design />
+            <Programmer />
+          </div>
+          <div className={styles.aboutCard}>
+            <Aboutcard />
+          </div>
+          <div className={styles.experience}>
+            <h2 className={styles.expHeader}>Experience</h2>
+              <ExperienceContainer />
+          </div>
+          <div className={styles.projects}>
+            <h2 className={styles.expHeader}>My Projects</h2>
+            <ProjectCardContainer />
+          </div>
+          <div className={styles.designs}>
+            <h2 className={styles.designHeader}>My Designs</h2>
+            <DesignsContainer />
+          </div>
+          <div className={styles.icons}>
+            <h2>Where to reach me</h2>
+            <MediaLinks />
+          </div>
+        </section>
       </main>
       <footer className={styles.footer}>
         <div>
           <p>all work &copy; Colin Zhou 2020-present - all rights reserved</p>
         </div>
       </footer>
-      <div id='headerbar'></div>
+      <div id='progressBar'></div>
+      <script src="../scripts/headerbar.js"></script>
     </div>
   )
 }
