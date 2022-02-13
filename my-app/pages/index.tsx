@@ -30,18 +30,18 @@ const Home: NextPage = () => {
             <Design />
             <Programmer />
           </div>
-          <div className={styles.aboutCard}>
+          <div className={styles.aboutCard} id="div-1">
             <Aboutcard />
           </div>
-          <div className={styles.experience}>
+          <div className={styles.experience} id="div-2">
             <h2 className={styles.expHeader}>Experience</h2>
               <ExperienceContainer />
           </div>
-          <div className={styles.projects}>
+          <div className={styles.projects} id="div-3">
             <h2 className={styles.expHeader}>My Projects</h2>
             <ProjectCardContainer />
           </div>
-          <div className={styles.designs}>
+          <div className={styles.designs} id="div-4">
             <h2 className={styles.designHeader}>My Designs</h2>
             <DesignsContainer />
           </div>

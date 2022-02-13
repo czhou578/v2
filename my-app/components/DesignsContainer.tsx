@@ -1,8 +1,6 @@
 import React from "react";
 import UIDesign1 from "../public/images/UIDesign1.png";
 import UIDesign2 from "../public/images/UIDesign2.png";
-import UIDesign3 from "../public/images/UIDesign3.png";
-import UIDesign4 from "../public/images/UIDesign4.png";
 import ElpisUI1 from "../public/images/ElpisUI1.png";
 import ElpisUI2 from "../public/images/ElpisUI2.png";
 import BCollege1 from "../public/images/BC1.png";
@@ -20,8 +18,6 @@ import {
   foodApp2Descrip,
   uidesign1Descrip,
   uidesign2Descrip,
-  uidesign3Descrip,
-  uidesign4Descrip,
 } from "./DesignDescriptions";
 
 const DesignCard: React.FC<{ img: StaticImageData; description: string }> = ({
@@ -36,6 +32,7 @@ const DesignCard: React.FC<{ img: StaticImageData; description: string }> = ({
         width="600px"
         height="500px"
         objectFit="contain"
+        className={styles.zoomPic}
       />
       <p className={styles.description}>{description}</p>
     </div>
@@ -56,8 +53,6 @@ const DesignsContainer: React.FC = () => {
       <div className={styles.uiWrapper}>
         <DesignCard img={UIDesign1} description={uidesign1Descrip} />
         <DesignCard img={UIDesign2} description={uidesign2Descrip} />
-        <DesignCard img={UIDesign3} description={uidesign3Descrip} />
-        <DesignCard img={UIDesign4} description={uidesign4Descrip} />
       </div>
       <div className={styles.bcWrapper}>
         <DesignCard img={BCollege1} description={BCCollege1Descrip} />

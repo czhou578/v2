@@ -36,16 +36,16 @@ const HeaderBar: FC = () => {
         <div className={styles.navBarLinks}>
           <ul className={styles.taskbar}>
             <li className={styles.listItem}>
-              <a href="#section-2">About Me</a>
+              <a href="#div-1">About Me</a>
             </li>
             <li className={styles.listItem}>
-              <a href="#section-3">Experience</a>
+              <a href="#div-2">Experience</a>
             </li>
             <li className={styles.listItem}>
-              <a href="#section-4">Projects</a>
+              <a href="#div-3">Projects</a>
             </li>
             <li className={styles.listItem}>
-              <a href="#section-5">Designs</a>
+              <a href="#div-4">Designs</a>
             </li>
             <li className={styles.listItem}>
               <a href="/resume/resume.pdf" target="_blank">
