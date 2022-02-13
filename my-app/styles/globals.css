@@ -24,7 +24,7 @@ a {
   top: 0;
   left: 0;
   height: 7px;
-  background: white;
+  background: #800080;
   width: 0%;
   z-index: 100;
   transition: width 0.2s ease-out;

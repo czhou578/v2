@@ -20,7 +20,6 @@ import {
   cwParagraph,
   wParagraph,
   youtubeParagraph,
-  UIParagraph,
   ElpisParagraph,
 } from "./Descriptions";
 import LinkIcon from "@mui/icons-material/Link";
@@ -54,7 +53,8 @@ const ProjectCard: React.FC<{
   chromeBlocker?: boolean;
   projectElpis?: boolean;
   githubLink: string
-}> = ({ img, list, description, chromeBlocker, projectElpis, githubLink }) => {
+  hostingLink?: string
+}> = ({ img, list, description, chromeBlocker, projectElpis, githubLink, hostingLink }) => {
   return (
     <div className={styles.container}>
       <div className={styles.photos}>
@@ -71,11 +71,15 @@ const ProjectCard: React.FC<{
         {list}
         {chromeBlocker || projectElpis ? (
           <div className={styles.iconWrapper}>
-            <GitHubIcon />
+            <a href={githubLink}>
+              <GitHubIcon />
+            </a>
           </div>
         ) : (
           <div className={styles.iconWrapper}>
-            <LinkIcon className={styles.link} />
+            <a href={hostingLink}>
+              <LinkIcon className={styles.link} />
+            </a>
             <a href={githubLink}>
               <GitHubIcon />
             </a>
@@ -156,6 +160,7 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
         githubLink="https://github.com/czhou578/DistanceCalc"
+        hostingLink="https://distance-calculator-a905f.web.app/"
       />
       <ProjectCard
         img={[presidentImg1, presidentImg2]}
@@ -177,6 +182,7 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
         githubLink="https://github.com/czhou578/AmericanScorecard"
+        hostingLink="https://github.com/czhou578/AmericanScorecard"
       />
       <ProjectCard
         img={[CWwebsite1, CWebsite2]}
@@ -198,6 +204,7 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
         githubLink="https://github.com/czhou578/CryptoWebsiteMockup"
+        hostingLink="https://priceless-curie-d29ee9.netlify.app/"
       />
 
       <ProjectCard
@@ -214,6 +221,7 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
         githubLink="https://github.com/czhou578/Wordament-v2"
+        hostingLink="https://hopeful-johnson-a48af0.netlify.app/"
       />
 
       <ProjectCard
