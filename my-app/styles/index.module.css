@@ -1,4 +1,8 @@
 
+.container {
+  overscroll-behavior-y: none;
+}
+
 .svgContainer {
   margin-left: 10%;
   margin-top: 140px;
