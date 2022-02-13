@@ -53,7 +53,8 @@ const ProjectCard: React.FC<{
   description: JSX.Element;
   chromeBlocker?: boolean;
   projectElpis?: boolean;
-}> = ({ img, list, description, chromeBlocker, projectElpis }) => {
+  githubLink: string
+}> = ({ img, list, description, chromeBlocker, projectElpis, githubLink }) => {
   return (
     <div className={styles.container}>
       <div className={styles.photos}>
@@ -75,7 +76,9 @@ const ProjectCard: React.FC<{
         ) : (
           <div className={styles.iconWrapper}>
             <LinkIcon className={styles.link} />
-            <GitHubIcon />
+            <a href={githubLink}>
+              <GitHubIcon />
+            </a>
           </div>
         )}
       </div>
@@ -130,6 +133,7 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
         projectElpis={true}
+        githubLink="https://github.com/czhou578/Code-Samples-Project-Elpis"
       />
       <ProjectCard
         img={[DistanceImg1, DistanceImg2]}
@@ -151,6 +155,7 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[0]}
           />
         }
+        githubLink="https://github.com/czhou578/DistanceCalc"
       />
       <ProjectCard
         img={[presidentImg1, presidentImg2]}
@@ -171,6 +176,7 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[1]}
           />
         }
+        githubLink="https://github.com/czhou578/AmericanScorecard"
       />
       <ProjectCard
         img={[CWwebsite1, CWebsite2]}
@@ -191,6 +197,7 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[2]}
           />
         }
+        githubLink="https://github.com/czhou578/CryptoWebsiteMockup"
       />
 
       <ProjectCard
@@ -206,6 +213,7 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[3]}
           />
         }
+        githubLink="https://github.com/czhou578/Wordament-v2"
       />
 
       <ProjectCard
@@ -220,25 +228,8 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
         chromeBlocker={true}
+        githubLink="https://github.com/czhou578/YouTubeBlocker"
       />
-      {/* <ProjectCard
-        img={[UIDesign1, UIDesign2]}
-        list={
-          <ProjectSkillsList
-            skills={[
-              "Figma",
-              "Dribbble",
-              "Google Images of Futuristic Designs",
-            ]}
-          />
-        }
-        description={
-          <ProjectDescription
-            header="Self Made Designs"
-            elucidation={elucidations[5]}
-          />
-        }
-      /> */}
     </div>
   );
 };

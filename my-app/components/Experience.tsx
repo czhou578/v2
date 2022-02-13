@@ -48,7 +48,6 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
           }
         })}
       </div>
-
       {headers.map((header, key) => {
         return (
           <div className={"tabContent"} id={header} key={key}>
