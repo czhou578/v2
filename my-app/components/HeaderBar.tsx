@@ -48,7 +48,9 @@ const HeaderBar: FC = () => {
               <a href="#section-5">Designs</a>
             </li>
             <li className={styles.listItem}>
-              <a href="/resume/resume.pdf" target="_blank">Resume</a>
+              <a href="/resume/resume.pdf" target="_blank">
+                Resume
+              </a>
             </li>
           </ul>
         </div>
