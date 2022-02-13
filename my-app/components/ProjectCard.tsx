@@ -52,9 +52,17 @@ const ProjectCard: React.FC<{
   description: JSX.Element;
   chromeBlocker?: boolean;
   projectElpis?: boolean;
-  githubLink: string
-  hostingLink?: string
-}> = ({ img, list, description, chromeBlocker, projectElpis, githubLink, hostingLink }) => {
+  githubLink: string;
+  hostingLink?: string;
+}> = ({
+  img,
+  list,
+  description,
+  chromeBlocker,
+  projectElpis,
+  githubLink,
+  hostingLink,
+}) => {
   return (
     <div className={styles.container}>
       <div className={styles.photos}>

@@ -51,7 +51,9 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
       {headers.map((header, key) => {
         return (
           <div className={"tabContent"} id={header} key={key}>
-            <h3 key={key} className="experHeader">{header}</h3>
+            <h3 key={key} className="experHeader">
+              {header}
+            </h3>
             <div>{lists[key]}</div>
           </div>
         );
