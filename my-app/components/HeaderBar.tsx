@@ -1,5 +1,6 @@
 import { FC } from "react";
 import styles from "../styles/headerbar.module.css";
+import Link from "next/link";
 
 const HeaderBar: FC = () => {
   return (
@@ -36,21 +37,31 @@ const HeaderBar: FC = () => {
         <div className={styles.navBarLinks}>
           <ul className={styles.taskbar}>
             <li className={styles.listItem}>
-              <a href="#div-1">About Me</a>
+              <Link href="#div-1" scroll={false}>
+                <a>About Me</a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a href="#div-2">Experience</a>
+              <Link href="#div-2" scroll={false}>
+                <a>Experience</a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a href="#div-3">Projects</a>
+              <Link href="#div-3" scroll={false}>
+                <a>Projects</a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a href="#div-4">Designs</a>
+              <Link href="#div-4" scroll={false}>
+                <a>Designs</a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a href="/resume/resume.pdf" target="_blank">
-                Resume
-              </a>
+              <Link href="/resume/resume.pdf" scroll={false}>
+                <a target="_blank">
+                  Resume
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

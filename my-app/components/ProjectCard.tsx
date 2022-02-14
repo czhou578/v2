@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ProjectSkillsList from "./ProjectSkillsList";
 import DistanceImg1 from "../public/images/Screenshot (36).png";
 import DistanceImg2 from "../public/images/Screenshot (35).png";
@@ -79,20 +80,26 @@ const ProjectCard: React.FC<{
         {list}
         {chromeBlocker || projectElpis ? (
           <div className={styles.iconWrapper}>
-            <a href={githubLink}>
-              <GitHubIcon />
-            </a>
+            <Link href={githubLink} scroll={false}>
+              <a>
+                <GitHubIcon />
+              </a>
+            </Link>
           </div>
-        ) : (
+        ) : hostingLink ? (
           <div className={styles.iconWrapper}>
-            <a href={hostingLink}>
-              <LinkIcon className={styles.link} />
-            </a>
-            <a href={githubLink}>
-              <GitHubIcon />
-            </a>
+            <Link href={hostingLink} scroll={false}>
+              <a>
+                <LinkIcon className={styles.link} />
+              </a>
+            </Link>
+            <Link href={githubLink}>
+              <a>
+                <GitHubIcon />
+              </a>            
+            </Link>
           </div>
-        )}
+        ) : null}
       </div>
     </div>
   );
