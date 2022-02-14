@@ -47,7 +47,7 @@ const Home: NextPage = () => {
             <DesignsContainer />
           </div>
           <div className={styles.icons}>
-            <h2>Where to reach me</h2>
+            <h2>Where to reach me!</h2>
             <MediaLinks />
           </div>
         </section>

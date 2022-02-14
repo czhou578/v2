@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;0,700;1,900&display=swap');
 .introContainer {
   padding-top: 10%;
   margin-left: 35%;
@@ -10,11 +11,19 @@
 }
 
 .introContainer > h1 {
-  font-size: 40px;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .introContainer > h2 {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .c1, .c2 {
@@ -34,8 +43,10 @@ h3 .description {
   border-right: 0.15em solid orange;
   letter-spacing: 0.14 em;
   animation: 
-    typing1 3s steps(35, end) forwards,
+    typing1 5s steps(50, end) forwards,
     blinking 1.5s infinite;
+  animation-delay: 1s;
+
 }
 
 
@@ -48,9 +59,9 @@ h3 .description2 {
   border-right: 0.15em solid orange;
   letter-spacing: 0.14 em;
   animation: 
-    typing1 3s steps(35, end) forwards,
+    typing1 6s steps(90, end) forwards,
     blinking 1.5s infinite;
-  animation-delay: 3s;
+  animation-delay: 6s;
 }
 
 @keyframes typing1 {

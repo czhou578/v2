@@ -49,11 +49,12 @@
 }
 
 .icons > h2 {
-  margin-left: 35%;
+  margin-left: 31%;
+  font-size: 35px;
 }
 
 .footer {
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 430px;
 }
