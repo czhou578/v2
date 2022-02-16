@@ -13,7 +13,7 @@ import YoutubeImage1 from "../public/images/YT.png";
 import YoutubeImage2 from "../public/images/YT2.png";
 import Elpis1 from "../public/images/PE1.png";
 import Elpis2 from "../public/images/PE2.png";
-import styles from "../styles/ProjectCard.module.css";
+import styles from "../styles/projectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 import {
   dcParagraph,
