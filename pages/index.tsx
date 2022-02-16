@@ -50,6 +50,7 @@ const Home: NextPage = () => {
             <h2>Where to reach me!</h2>
             <MediaLinks />
           </div>
+          <div></div>
         </section>
         <div id='progressBar'></div>
         <Script src="rollingBar/headerbar.js" type='text/javascript'/>
