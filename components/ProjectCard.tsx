@@ -36,9 +36,9 @@ const elucidations = [
   ElpisParagraph,
 ];
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}` 
-}
+// const myLoader = ({ src, width, quality }) => {
+//   return `https://example.com/${src}?w=${width}&q=${quality || 75}` 
+// }
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
@@ -75,7 +75,7 @@ const ProjectCard: React.FC<{
         {img.map((image, key) => {
           return (
             <div key={key} className={styles.imgWrapper}>
-              <Image src={image} width={600} height={300} loader={loader}/>
+              <Image src={image} width={600} height={300} />
             </div>
           );
         })}

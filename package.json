@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export" 
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -17,6 +17,7 @@
     "@fortawesome/react-fontawesome": "^0.1.17",
     "@mui/icons-material": "^5.3.1",
     "next": "12.0.9",
+    "next-optimized-images": "^2.6.2",
     "prettier": "^2.5.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
