@@ -36,6 +36,8 @@ const elucidations = [
   ElpisParagraph,
 ];
 
+const prefix = "/v2"
+
 // const myLoader = ({ src, width, quality }) => {
 //   return `https://example.com/${src}?w=${width}&q=${quality || 75}` 
 // }
@@ -53,7 +55,7 @@ const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
 };
 
 const ProjectCard: React.FC<{
-  img: StaticImageData[];
+  img: string[];
   list: JSX.Element;
   description: JSX.Element;
   chromeBlocker?: boolean;
@@ -75,7 +77,7 @@ const ProjectCard: React.FC<{
         {img.map((image, key) => {
           return (
             <div key={key} className={styles.imgWrapper}>
-              <Image src={image} width={600} height={300} />
+              <Image src={prefix + image} width={600} height={300} />
             </div>
           );
         })}
@@ -137,7 +139,7 @@ const ProjectCardContainer: React.FC = () => {
       /> */}
 
       <ProjectCard
-        img={[Elpis1, Elpis2]}
+        img={["/images/PE1.png", "/images/PE2.png"]}
         list={
           <ProjectSkillsList
             skills={[
@@ -160,7 +162,7 @@ const ProjectCardContainer: React.FC = () => {
         githubLink="https://github.com/czhou578/Code-Samples-Project-Elpis"
       />
       <ProjectCard
-        img={[DistanceImg1, DistanceImg2]}
+        img={["images/Screenshot (36).png", "/images/Screenshot (35).png"]}
         list={
           <ProjectSkillsList
             skills={[
@@ -183,7 +185,7 @@ const ProjectCardContainer: React.FC = () => {
         hostingLink="https://distance-calculator-a905f.web.app/"
       />
       <ProjectCard
-        img={[presidentImg1, presidentImg2]}
+        img={["images/Screenshot (44).png", "images/Screenshot (43).png"]}
         list={
           <ProjectSkillsList
             skills={[
@@ -205,7 +207,7 @@ const ProjectCardContainer: React.FC = () => {
         hostingLink="https://github.com/czhou578/AmericanScorecard"
       />
       <ProjectCard
-        img={[CWwebsite1, CWebsite2]}
+        img={["/images/CW1.png", "/images/CW2.png"]}
         list={
           <ProjectSkillsList
             skills={[
@@ -228,7 +230,7 @@ const ProjectCardContainer: React.FC = () => {
       />
 
       <ProjectCard
-        img={[Wordament1, Wordament2]}
+        img={["/images/W1.png", "/images/W2.png"]}
         list={
           <ProjectSkillsList
             skills={["HTML/CSS", "TypeScript", "React.js", "Netlify"]}
@@ -245,7 +247,7 @@ const ProjectCardContainer: React.FC = () => {
       />
 
       <ProjectCard
-        img={[YoutubeImage1, YoutubeImage2]}
+        img={["/images/YT.png", "/images/YT2.png"]}
         list={
           <ProjectSkillsList skills={["VSCode", "Google Chrome API", "CSS"]} />
         }
