@@ -162,7 +162,7 @@ const ProjectCardContainer: React.FC = () => {
         githubLink="https://github.com/czhou578/Code-Samples-Project-Elpis"
       />
       <ProjectCard
-        img={["images/Screenshot (36).png", "/images/Screenshot (35).png"]}
+        img={["images/distancecalc1.png", "/images/distancecalc2.png"]}
         list={
           <ProjectSkillsList
             skills={[
