@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: isProd ? "https://www.czhou578.com" : "",
+  assetPrefix: isProd ? "/v2" : "",
   images: {
     loader: 'akamai',
     path: '/',

@@ -23,7 +23,7 @@ const elucidations = [
   ElpisParagraph,
 ];
 
-const prefix = "https://www.czhou578.com"
+const prefix = "/v2"
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
