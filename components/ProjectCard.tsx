@@ -1,18 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProjectSkillsList from "./ProjectSkillsList";
-// import DistanceImg1 from "../public/images/Screenshot (36).png";
-// import DistanceImg2 from "../public/images/Screenshot (35).png";
-// import presidentImg1 from "../public/images/Screenshot (44).png";
-// import presidentImg2 from "../public/images/Screenshot (43).png";
-// import CWwebsite1 from "../public/images/CW1.png";
-// import CWebsite2 from "../public/images/CW2.png";
-// import Wordament1 from "../public/images/W1.png";
-// import Wordament2 from "../public/images/W2.png";
-// import YoutubeImage1 from "../public/images/YT.png";
-// import YoutubeImage2 from "../public/images/YT2.png";
-// import Elpis1 from "../public/images/PE1.png";
-// import Elpis2 from "../public/images/PE2.png";
 import styles from "../styles/projectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 import {
@@ -25,7 +13,6 @@ import {
 } from "./Descriptions";
 import LinkIcon from "@mui/icons-material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import loader from './ImageLoader'
 
 const elucidations = [
   dcParagraph,
@@ -36,11 +23,7 @@ const elucidations = [
   ElpisParagraph,
 ];
 
-const prefix = "/v2"
-
-// const myLoader = ({ src, width, quality }) => {
-//   return `https://example.com/${src}?w=${width}&q=${quality || 75}` 
-// }
+const prefix = "https://www.czhou578.com/"
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
