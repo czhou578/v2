@@ -185,7 +185,7 @@ const ProjectCardContainer: React.FC = () => {
         hostingLink="https://distance-calculator-a905f.web.app/"
       />
       <ProjectCard
-        img={["images/Screenshot (44).png", "images/Screenshot (43).png"]}
+        img={["images/whitehouse1.png", "images/whitehouse2.png"]}
         list={
           <ProjectSkillsList
             skills={[
