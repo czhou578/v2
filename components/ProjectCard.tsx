@@ -162,7 +162,7 @@ const ProjectCardContainer: React.FC = () => {
         githubLink="https://github.com/czhou578/Code-Samples-Project-Elpis"
       />
       <ProjectCard
-        img={["images/distancecalc1.png", "/images/distancecalc2.png"]}
+        img={["/images/distancecalc1.png", "/images/distancecalc2.png"]}
         list={
           <ProjectSkillsList
             skills={[
@@ -185,7 +185,7 @@ const ProjectCardContainer: React.FC = () => {
         hostingLink="https://distance-calculator-a905f.web.app/"
       />
       <ProjectCard
-        img={["images/whitehouse1.png", "images/whitehouse2.png"]}
+        img={["/images/whitehouse1.png", "/images/whitehouse2.png"]}
         list={
           <ProjectSkillsList
             skills={[
