@@ -53,7 +53,7 @@ const Aboutcard: FC = () => {
       <div>
         <SkillsList
           header="Skills"
-          skillsList={["JavaScript", "HTML", "CSS", "AWS", "React"]}
+          skillsList={["React", "HTML", "CSS", "JavaScript(ES6)", "AWS"]}
         />
       </div>
     </div>
