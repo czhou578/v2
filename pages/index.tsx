@@ -50,14 +50,13 @@ const Home: NextPage = () => {
             <h2>Where to reach me!</h2>
             <MediaLinks />
           </div>
-          <div></div>
         </section>
         <div id='progressBar'></div>
         <Script src="rollingBar/headerbar.js" type='text/javascript'/>
       </main>
       <footer className={styles.footer}>
         <div>
-          <p>all work &copy; Colin Zhou 2020-present - all rights reserved</p>
+          <i>all work &copy; Colin Zhou 2020-present - all rights reserved</i>
         </div>
       </footer>
     </div>

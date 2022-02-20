@@ -23,7 +23,7 @@ const elucidations = [
   ElpisParagraph,
 ];
 
-const prefix = "/v2"
+const prefix = "/v2";
 
 const ProjectDescription: React.FC<{ elucidation: string; header: string }> = ({
   elucidation,
@@ -86,7 +86,7 @@ const ProjectCard: React.FC<{
             <Link href={githubLink}>
               <a>
                 <GitHubIcon />
-              </a>            
+              </a>
             </Link>
           </div>
         ) : null}

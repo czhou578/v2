@@ -22,8 +22,9 @@
   margin-left: 16%;
 }
 
-.expHeader, .white {
-  color: white;
+.expHeader, .designHeader{
+  color: #e6c6f5;
+  font-size: 1.8rem;
   white-space: pre-wrap;
 }
 

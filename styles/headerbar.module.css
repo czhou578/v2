@@ -22,18 +22,17 @@
 
 .listItem a {
   text-decoration: none;
-  color: white;
   padding: 14px 16px;
   display: block;
 }
 
 .listItem > a {
-  color: white;
+  color: #a887fa;
 }
 
 
 .listItem > a:hover {
-  color: rgb(177, 177, 151);
+  color: rgb(255, 255, 255);
 }
 
 .taskbar .listItem:first-child {

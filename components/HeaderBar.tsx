@@ -58,9 +58,7 @@ const HeaderBar: FC = () => {
             </li>
             <li className={styles.listItem}>
               <Link href="/resume/resume.pdf" scroll={false}>
-                <a target="_blank">
-                  Resume
-                </a>
+                <a target="_blank">Resume</a>
               </Link>
             </li>
           </ul>
