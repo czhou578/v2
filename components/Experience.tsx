@@ -82,17 +82,18 @@ const ExperienceContainer: React.FC = () => {
         lists={[
           <ExperienceList
             elements={[
-              `Designed / helped develop a serverless web app that would be used by New York public school 
+              `Designed / developed a serverless web app that would be used by New York public school 
               teachers to monitor and track the academic progress of at-risk high school students.`,
 
               `Made final design choices for UI components.`,
 
-              `Worked as a front end developer to implement UI components in code.`,
+              `Used React to implement UI components on the frontend and AWS for storing media and files 
+              on the backend.`,
             ]}
           />,
           <ExperienceList
             elements={[
-              `Promoted company products across multiple online domains.`,
+              `Promoted company products through emails, and by giving presentations at events.`,
 
               `Secured sponsorships with various hackathon events.`,
 
@@ -101,20 +102,21 @@ const ExperienceContainer: React.FC = () => {
           />,
           <ExperienceList
             elements={[
-              `Created websites and designs for fun.`,
+              `Created websites and designs for fun using various frontend technologies like React,
+              UI frameworks like Semantic UI, and Typescript.`,
 
-              `Created Google Chrome extension to block YouTube recommendations.`,
+              `Used the Google Chrome API to create a Google Chrome extension to block YouTube recommendations.`,
 
-              `Created a replica of the popular Microsoft Wordament game.`,
+              `Developed a replica of the popular Microsoft Wordament game using Typescript, and React.`,
             ]}
           />,
           <ExperienceList
             elements={[
-              `Writing about history, and other topics, with over 25 million answer views.`,
+              `Writing about history, and other topics, with over 25 million answer views since 2017.`,
 
-              `Managing own blog about Technology, over 30k followers.`,
+              `Managing own blog about futuristic technology, over 30k followers.`,
 
-              `Admin user of multiple blogs about finance, interesting information.`,
+              `Admin and moderator of multiple blogs about finance and interesting information.`,
             ]}
           />,
           <ExperienceList
@@ -130,7 +132,7 @@ const ExperienceContainer: React.FC = () => {
             elements={[
               `Helped tutor Cupertino High School sophomores with improving their writing.`,
 
-              `Assisted Bellevue College classmates with their research papers.`,
+              `Assisted Bellevue College classmates online and in-person with their research papers.`,
 
               `Coordinated with high school/college teachers with tutoring progress.`,
             ]}

@@ -36,9 +36,9 @@ const Aboutcard: FC = () => {
           into my creations. In addition, I have many years of experience
           writing online, allowing me to share my ideas and thinking to millions
           around the world. I am currently a student in college studying
-          Computer Science. My dream is to be a part of the speahead of future
-          innovation that will help the most pressing problems in this world.
-          Style over substance, people over profits.
+          Computer Science. My dream is to be able to help design and architect
+          platforms that would help problem solvers communicate their solutions
+          to a pressing problem to the world.
         </pre>
       </div>
       <div className={styles.imgContainer}>
