@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "../styles/headerbar.module.css";
-import Link from "next/link";
+import Link from "next/link"; //it
 
 const HeaderBar: FC = () => {
   return (
