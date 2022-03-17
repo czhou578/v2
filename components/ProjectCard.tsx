@@ -10,6 +10,7 @@ import {
   wParagraph,
   youtubeParagraph,
   ElpisParagraph,
+  foodAppParagraph
 } from "./Descriptions";
 import LinkIcon from "@mui/icons-material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -21,6 +22,7 @@ const elucidations = [
   wParagraph,
   youtubeParagraph,
   ElpisParagraph,
+  foodAppParagraph
 ];
 
 const prefix = "/v2";
@@ -98,28 +100,29 @@ const ProjectCard: React.FC<{
 const ProjectCardContainer: React.FC = () => {
   return (
     <div className={styles.parentWrapper}>
-      {/* <ProjectCard
-        img={[Elpis1, Elpis2]}
+      <ProjectCard
+        img={["/images/Sapp.png", "/images/Sapp2.png"]}
         list={
           <ProjectSkillsList
             skills={[
-              "HTML/CSS",
-              "JavaScript",
+              "HTML/CSS Modules",
+              "Typescript",
               "React.js",
               "Semantic UI",
               "AWS",
-              "Adobe XD",
+              "Redux Toolkit",
             ]}
           />
         }
         description={
           <ProjectDescription
-            header="Project Elpis App"
-            elucidation={elucidations[5]}
+            header="StreetFoodLove Capstone Project (In progress)"
+            elucidation={elucidations[6]}
           />
         }
         projectElpis={true}
-      /> */}
+        githubLink="https://bcfoodapp.github.io/streetfoodlove/vendors/0be4c03e-130a-40fc-9993-8aa2ba08dbfc"
+      />
 
       <ProjectCard
         img={["/images/PE1.png", "/images/PE2.png"]}
@@ -154,7 +157,7 @@ const ProjectCardContainer: React.FC = () => {
               "React.js",
               "Material UI",
               "React Router",
-              "Firebase",
+              "Firebase"
             ]}
           />
         }
@@ -175,8 +178,9 @@ const ProjectCardContainer: React.FC = () => {
               "HTML/CSS",
               "JavaScript",
               "React.js",
-              "Victory.js",
+              "Redux Toolkit",
               "Firebase",
+              "FEC / Google Civics API"
             ]}
           />
         }
@@ -194,11 +198,11 @@ const ProjectCardContainer: React.FC = () => {
         list={
           <ProjectSkillsList
             skills={[
-              "HTML/CSS",
+              "HTML/SASS",
               "JavaScript",
               "Bootstrap",
               "Figma",
-              "Firebase",
+              "Lunarcrush Crypto API"
             ]}
           />
         }
@@ -216,7 +220,7 @@ const ProjectCardContainer: React.FC = () => {
         img={["/images/W1.png", "/images/W2.png"]}
         list={
           <ProjectSkillsList
-            skills={["HTML/CSS", "TypeScript", "React.js", "Netlify"]}
+            skills={["HTML/CSS Modules", "TypeScript", "React.js", "Netlify"]}
           />
         }
         description={
@@ -232,7 +236,7 @@ const ProjectCardContainer: React.FC = () => {
       <ProjectCard
         img={["/images/YT.png", "/images/YT2.png"]}
         list={
-          <ProjectSkillsList skills={["VSCode", "Google Chrome API", "CSS"]} />
+          <ProjectSkillsList skills={["Google Chrome API", "CSS"]} />
         }
         description={
           <ProjectDescription
