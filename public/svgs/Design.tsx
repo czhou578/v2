@@ -8,7 +8,7 @@ const Design: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.designWrapper}>
       <div className="icon-1">
         <svg
           width="828"

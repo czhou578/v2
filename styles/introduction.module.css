@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;0,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;0,700;1,900&family=Source+Sans+Pro:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;0,700;1,900&family=Source+Sans+Pro:wght@300;400&display=swap");
 
 .introContainer {
   padding-top: 10%;
@@ -13,23 +12,24 @@
   font-size: 30px;
   color: #a887fa;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .introContainer > h2 {
   color: #d0bcff;
   font-size: 60px;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.c1, .c2 {
+.c1,
+.c2 {
   display: inline-block;
 }
 
@@ -41,17 +41,13 @@ h3 .description {
   font-size: 1rem;
   color: white;
   width: 0;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
   border-right: 0.15em solid orange;
   letter-spacing: 0.14 em;
-  animation: 
-    typing1 5s steps(50, end) forwards,
-    blinking 1.5s infinite;
+  animation: typing1 5s steps(50, end) forwards, blinking 1.5s infinite;
   animation-delay: 1s;
-
 }
-
 
 h3 .description2 {
   font-size: 1rem;
@@ -61,18 +57,30 @@ h3 .description2 {
   white-space: nowrap;
   border-right: 0.15em solid orange;
   letter-spacing: 0.14 em;
-  animation: 
-    typing1 6s steps(90, end) forwards,
-    blinking 1.5s infinite;
+  animation: typing1 6s steps(90, end) forwards, blinking 1.5s infinite;
   animation-delay: 6s;
 }
 
 @keyframes typing1 {
-  from {width: 0;}
-  to {width: 100%;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blinking {
-  from { border-color: transparent }
-  to {border-color: orange}
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .introContainer {
+    margin-left: 10%;
+  }
 }

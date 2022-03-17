@@ -1,4 +1,5 @@
-.header, .paragraph {
+.header,
+.paragraph {
   color: white;
 }
 
@@ -11,13 +12,33 @@
 }
 
 .designCtn {
-  position: absolute;
-  top: 120%;
-  left: 20%;
+  margin-left: 27%;
+  margin-top: -7.5%;
 }
 
-.programCtn {
-  position: absolute;
-  top: 120%;
-  left: 55%;
+@media screen and (min-width: 1373px) and (max-width: 1495px) {
+  .designWrapper {
+    margin-left: -10%;
+  }
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1373px) {
+  .designWrapper {
+    margin-left: -20%;
+  }
+}
+
+@media screen and (max-width: 1252px) {
+  .designWrapper {
+    margin-left: 0%;
+  }
+
+  .programWrapper {
+    margin-left: 20%;
+  }
+
+  .designCtn {
+    margin-top: -25%;
+    margin-bottom: 10%;
+  }
 }

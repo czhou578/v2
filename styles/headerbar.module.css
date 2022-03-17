@@ -30,7 +30,6 @@
   color: #dbcdfc;
 }
 
-
 .listItem > a:hover {
   color: rgb(255, 255, 255);
 }
@@ -54,4 +53,3 @@
 .taskbar .listItem:nth-child(5) {
   order: 5;
 }
-

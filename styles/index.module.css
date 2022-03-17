@@ -1,4 +1,3 @@
-
 .container {
   overscroll-behavior-y: none;
 }
@@ -22,7 +21,8 @@
   margin-left: 16%;
 }
 
-.expHeader, .designHeader{
+.expHeader,
+.designHeader {
   color: #e6c6f5;
   font-size: 1.8rem;
   white-space: pre-wrap;
@@ -58,4 +58,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 430px;
+}
+
+@media screen and (max-width: 1252px) {
+  .svgContainer {
+    flex-wrap: wrap;
+  }
 }

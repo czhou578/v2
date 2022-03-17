@@ -16,8 +16,8 @@ const Introduction: FC = () => {
         <br></br>
         <div className={styles.c2}>
           <div className={styles.description2}>
-            I have a passion for front end web development. Currently looking
-            for technical work opportunities for Summer 2022...
+            Currently looking for technical work opportunities for Summer
+            2022...
           </div>
         </div>
       </h3>

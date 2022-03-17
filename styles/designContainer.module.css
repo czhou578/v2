@@ -18,7 +18,9 @@
   max-width: 1300px;
 }
 
-.bcWrapper, .elpisWrapper, .foodWrapper {
+.bcWrapper,
+.elpisWrapper,
+.foodWrapper {
   display: flex;
   justify-content: space-between;
   max-width: 1300px;
@@ -29,4 +31,3 @@
   padding-left: 0.2rem;
   margin-top: -60px;
 }
-
