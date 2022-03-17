@@ -120,7 +120,6 @@ const ProjectCardContainer: React.FC = () => {
             elucidation={elucidations[6]}
           />
         }
-        projectElpis={true}
         githubLink="https://github.com/bcfoodapp/streetfoodlove"
         hostingLink="https://bcfoodapp.github.io/streetfoodlove/vendors/0be4c03e-130a-40fc-9993-8aa2ba08dbfc"
       />
