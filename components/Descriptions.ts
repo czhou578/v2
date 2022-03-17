@@ -30,4 +30,3 @@ export const foodAppParagraph = `For my senior year capstone project, I helped t
 that will empower and enable food truck vendors to more easily attract customers and run their business.
 I worked with mostly Typescript and React.js on the front end for developing the UI and used Adobe XD for
 the initial mockups. `;
-

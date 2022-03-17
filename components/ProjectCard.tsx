@@ -10,7 +10,7 @@ import {
   wParagraph,
   youtubeParagraph,
   ElpisParagraph,
-  foodAppParagraph
+  foodAppParagraph,
 } from "./Descriptions";
 import LinkIcon from "@mui/icons-material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -22,7 +22,7 @@ const elucidations = [
   wParagraph,
   youtubeParagraph,
   ElpisParagraph,
-  foodAppParagraph
+  foodAppParagraph,
 ];
 
 const prefix = "/v2";
@@ -157,7 +157,7 @@ const ProjectCardContainer: React.FC = () => {
               "React.js",
               "Material UI",
               "React Router",
-              "Firebase"
+              "Firebase",
             ]}
           />
         }
@@ -180,7 +180,7 @@ const ProjectCardContainer: React.FC = () => {
               "React.js",
               "Redux Toolkit",
               "Firebase",
-              "FEC / Google Civics API"
+              "FEC / Google Civics API",
             ]}
           />
         }
@@ -202,7 +202,7 @@ const ProjectCardContainer: React.FC = () => {
               "JavaScript",
               "Bootstrap",
               "Figma",
-              "Lunarcrush Crypto API"
+              "Lunarcrush Crypto API",
             ]}
           />
         }
@@ -235,9 +235,7 @@ const ProjectCardContainer: React.FC = () => {
 
       <ProjectCard
         img={["/images/YT.png", "/images/YT2.png"]}
-        list={
-          <ProjectSkillsList skills={["Google Chrome API", "CSS"]} />
-        }
+        list={<ProjectSkillsList skills={["Google Chrome API", "CSS"]} />}
         description={
           <ProjectDescription
             header="YouTube Blocker"
