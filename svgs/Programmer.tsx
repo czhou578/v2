@@ -9,7 +9,7 @@ const Programmer: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.programWrapper}>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" strategy="beforeInteractive"/>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js" strategy="beforeInteractive"/>
       <Script src="gsap-public\minified\gsap.min.js" strategy="beforeInteractive"/>
