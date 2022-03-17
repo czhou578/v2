@@ -121,7 +121,8 @@ const ProjectCardContainer: React.FC = () => {
           />
         }
         projectElpis={true}
-        githubLink="https://bcfoodapp.github.io/streetfoodlove/vendors/0be4c03e-130a-40fc-9993-8aa2ba08dbfc"
+        githubLink="https://github.com/bcfoodapp/streetfoodlove"
+        hostingLink="https://bcfoodapp.github.io/streetfoodlove/vendors/0be4c03e-130a-40fc-9993-8aa2ba08dbfc"
       />
 
       <ProjectCard
