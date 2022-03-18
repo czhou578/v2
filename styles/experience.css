@@ -52,7 +52,8 @@
 }
 
 @media screen and (min-width: 902px) and (max-width: 1520px) {
-  .tab, .expElement {
+  .tab,
+  .expElement {
     height: 500px;
   }
 }
@@ -63,7 +64,6 @@
   }
 }
 
-
 @media screen and (max-width: 1083px) {
   .tab {
     width: 30%;
@@ -71,7 +71,8 @@
 }
 
 @media screen and (max-width: 901px) {
-  .tab, .expElement {
+  .tab,
+  .expElement {
     height: 700px;
   }
 }
@@ -81,6 +82,3 @@
     margin-left: -20px;
   }
 } */
-
-
-
