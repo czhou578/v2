@@ -65,3 +65,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 722px) {
+  .experience {
+    margin-left: 12%;
+  }
+}

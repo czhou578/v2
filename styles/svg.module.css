@@ -42,3 +42,13 @@
     margin-bottom: 10%;
   }
 }
+
+@media screen and (max-width: 841px) {
+  .designWrapper {
+    margin-left: -20%;
+  }
+
+  .programWrapper {
+    margin-left: -2%;
+  }
+}

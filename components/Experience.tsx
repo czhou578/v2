@@ -65,7 +65,7 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
 const ExperienceList: React.FC<{ elements: string[] }> = ({ elements }) => {
   return (
     <div>
-      <ul>
+      <ul className="expElement">
         {elements.map((element, key) => {
           return <li key={key}>{element}</li>;
         })}
