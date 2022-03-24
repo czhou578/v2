@@ -178,7 +178,6 @@ const ProjectCardContainer: React.FC = () => {
               "HTML/CSS",
               "JavaScript",
               "React.js",
-              "Redux Toolkit",
               "Firebase",
               "FEC / Google Civics API",
             ]}

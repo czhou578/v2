@@ -23,9 +23,15 @@
   margin-top: -60px;
 }
 
-@media screen and (max-width: 1480px){
+@media screen and (max-width: 1480px) {
   .designContainer {
     margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .designContainer {
+    margin-left: 10%;
   }
 }
 
@@ -46,4 +52,3 @@
     margin-left: -20%;
   }
 }
-
