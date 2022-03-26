@@ -58,13 +58,13 @@
   }
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1083px) and (max-width: 1320px) {
   .expElement > li {
     width: 300px;
   }
 }
 
-@media screen and (max-width: 1083px) {
+@media screen and (max-width: 901px) and (max-width: 1083px) {
   .tab {
     width: 30%;
   }
@@ -76,9 +76,3 @@
     height: 700px;
   }
 }
-
-/* @media screen and (max-width: 722px) {
-  .tab {
-    margin-left: -20px;
-  }
-} */

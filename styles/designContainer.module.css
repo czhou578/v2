@@ -23,25 +23,25 @@
   margin-top: -60px;
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (min-width: 1400px) and (max-width: 1480px) {
   .designContainer {
     margin-left: 20%;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 920px) and (max-width: 1400px) {
   .designContainer {
     margin-left: 10%;
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 740px) and (max-width: 920px) {
   .designContainer {
     margin-left: 0%;
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 642px) and (max-width: 740px) {
   .designContainer {
     margin-left: -15%;
   }
