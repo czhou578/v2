@@ -219,7 +219,7 @@ const ProjectCardContainer: React.FC = () => {
         img={["/images/W1.png", "/images/W2.png"]}
         list={
           <ProjectSkillsList
-            skills={["HTML/CSS Modules", "TypeScript", "React.js", "Netlify"]}
+            skills={["HTML/CSS Modules", "TypeScript", "React.js", "Express", "MySQL"]}
           />
         }
         description={
