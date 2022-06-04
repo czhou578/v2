@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { designSVG } from "../../scripts/script";
-import styles from '../../styles/svg.module.css'
+import styles from "../../styles/svg.module.css";
 
 const Design: React.FC = () => {
   useEffect(() => {
@@ -164,7 +164,8 @@ const Design: React.FC = () => {
         <div className={styles.designCtn}>
           <h2 className={styles.header}>Designer (Start to Finish)</h2>
           <p className={styles.paragraph}>
-            Visual impact makes a statement. I&apos;ll help unite products, <br />
+            Visual impact makes a statement. I&apos;ll help unite products,{" "}
+            <br />
             interfaces, users, and experiences. From color to code...
           </p>
         </div>
