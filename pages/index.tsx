@@ -1,19 +1,18 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import HeaderBar from '../components/HeaderBar'
-import Introduction from '../components/Introduction'
-import styles from '../styles/index.module.css'
-import Design from '../public/svgs/Design'
-import Programmer from '../public/svgs/Programmer'
-import Aboutcard from '../components/Aboutcard'
-import ExperienceContainer from '../components/Experience'
-import ProjectCardContainer from '../components/ProjectCard'
-import DesignsContainer from '../components/DesignsContainer'
-import MediaLinks from '../components/MediaLinks'
-import Script from 'next/script'
+import type { NextPage } from "next";
+import Head from "next/head";
+import HeaderBar from "../components/HeaderBar";
+import Introduction from "../components/Introduction";
+import styles from "../styles/index.module.css";
+import Design from "../public/svgs/Design";
+import Programmer from "../public/svgs/Programmer";
+import Aboutcard from "../components/Aboutcard";
+import ExperienceContainer from "../components/Experience";
+import ProjectCardContainer from "../components/ProjectCard";
+import DesignsContainer from "../components/DesignsContainer";
+import MediaLinks from "../components/MediaLinks";
+import Script from "next/script";
 
 const Home: NextPage = () => {
-
   return (
     <div className={styles.container}>
       <Head>
@@ -36,7 +35,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.experience} id="div-2">
             <h2 className={styles.expHeader}>Experience</h2>
-              <ExperienceContainer />
+            <ExperienceContainer />
           </div>
           <div className={styles.projects} id="div-3">
             <h2 className={styles.expHeader}>My Projects</h2>
@@ -51,8 +50,8 @@ const Home: NextPage = () => {
             <MediaLinks />
           </div>
         </section>
-        <div id='progressBar'></div>
-        <Script src="rollingBar/headerbar.js" type='text/javascript'/>
+        <div id="progressBar"></div>
+        <Script src="rollingBar/headerbar.js" type="text/javascript" />
       </main>
       <footer className={styles.footer}>
         <div>
@@ -60,7 +59,7 @@ const Home: NextPage = () => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

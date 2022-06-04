@@ -23,32 +23,64 @@
   margin-top: -60px;
 }
 
-@media screen and (min-width: 1400px) and (max-width: 1480px) {
-  .designContainer {
-    margin-left: 20%;
+@media screen and (min-width: 1480px) and (max-width: 1549px) {
+  .uiWrapper,
+  .bcWrapper,
+  .elpisWrapper,
+  .foodWrapper {
+    margin-left: -100px;
   }
 }
 
-@media screen and (min-width: 920px) and (max-width: 1400px) {
+@media screen and (min-width: 1425px) and (max-width: 1480px) {
+  .uiWrapper,
+  .bcWrapper,
+  .elpisWrapper,
+  .foodWrapper {
+    margin-left: -200px;
+  }
+
+  /* .designContainer {
+    margin-left: 20%;
+  } */
+}
+
+@media screen and (min-width: 1339px) and (max-width: 1425px) {
+  .uiWrapper,
+  .bcWrapper,
+  .elpisWrapper,
+  .foodWrapper {
+    margin-left: -300px;
+  }
+
   .designContainer {
     margin-left: 10%;
   }
 }
 
-@media screen and (min-width: 740px) and (max-width: 920px) {
+@media screen and (min-width: 1280px) and (max-width: 1339px) {
+  .uiWrapper,
+  .bcWrapper,
+  .elpisWrapper,
+  .foodWrapper {
+    margin-left: -320px;
+    column-gap: 5px;
+  }
+
   .designContainer {
-    margin-left: 0%;
+    margin-left: 11%;
+    margin-right: 18px;
   }
 }
 
-@media screen and (min-width: 642px) and (max-width: 740px) {
+@media screen and (min-width: 859px) and (max-width: 1279px) {
   .designContainer {
-    margin-left: -15%;
+    margin-left: 10%;
   }
 }
 
-@media screen and (max-width: 642px) {
+@media screen and (max-width: 858px) {
   .designContainer {
-    margin-left: -20%;
+    margin-left: -5%;
   }
 }

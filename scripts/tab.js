@@ -1,5 +1,4 @@
 function openCity(event, cityName) {
-
   var i, tabcontent, tablinks;
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabContent");
@@ -16,9 +15,7 @@ function openCity(event, cityName) {
 
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(cityName).style.display = "block";
-  event.currentTarget.className += " active";   
-  
-
+  event.currentTarget.className += " active";
 }
 
-export default openCity
+export default openCity;

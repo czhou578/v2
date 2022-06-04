@@ -24,7 +24,7 @@
 //     ],
 //   },
 //   resolve: {
-//     extensions: [".tsx,", ".css", ".js"], 
+//     extensions: [".tsx,", ".css", ".js"],
 //   },
 //   target: "web",
 //   devTool: "inline-source-map",
@@ -40,4 +40,3 @@
 //   },
 
 // }
-
