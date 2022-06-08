@@ -1,13 +1,13 @@
+import Image from "next/image";
 import React from "react";
-import UIDesign1 from "../public/images/UIDesign1.png";
-import UIDesign2 from "../public/images/UIDesign2.png";
-import ElpisUI1 from "../public/images/ElpisUI1.png";
-import ElpisUI2 from "../public/images/ElpisUI2.png";
 import BCollege1 from "../public/images/BC1.png";
 import BCollege2 from "../public/images/BC2.png";
+import ElpisUI1 from "../public/images/ElpisUI1.png";
+import ElpisUI2 from "../public/images/ElpisUI2.png";
 import FoodApp1 from "../public/images/FoodApp1.png";
 import FoodApp2 from "../public/images/FoodApp2.png";
-import Image from "next/image";
+import UIDesign1 from "../public/images/UIDesign1.png";
+import UIDesign2 from "../public/images/UIDesign2.png";
 import styles from "../styles/designContainer.module.css";
 import {
   BCCollege1Descrip,

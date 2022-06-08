@@ -8,4 +8,7 @@ module.exports = {
     loader: "akamai",
     path: "/",
   },
+  typescript: {
+    ignoreBuildErrors: true
+  }
 };

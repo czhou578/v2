@@ -1,16 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Script from "next/script";
+import Aboutcard from "../components/Aboutcard";
+import DesignsContainer from "../components/DesignsContainer";
+import ExperienceContainer from "../components/Experience";
 import HeaderBar from "../components/HeaderBar";
 import Introduction from "../components/Introduction";
-import styles from "../styles/index.module.css";
+import MediaLinks from "../components/MediaLinks";
+import ProjectCardContainer from "../components/ProjectCard";
 import Design from "../public/svgs/Design";
 import Programmer from "../public/svgs/Programmer";
-import Aboutcard from "../components/Aboutcard";
-import ExperienceContainer from "../components/Experience";
-import ProjectCardContainer from "../components/ProjectCard";
-import DesignsContainer from "../components/DesignsContainer";
-import MediaLinks from "../components/MediaLinks";
-import Script from "next/script";
+import styles from "../styles/index.module.css";
 
 const Home: NextPage = () => {
   return (

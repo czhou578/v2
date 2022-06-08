@@ -1,7 +1,7 @@
-import { FC } from "react";
-import styles from "../styles/aboutcard.module.css";
 import Image from "next/image";
+import { FC } from "react";
 import profilePic from "../public/images/70.jpg";
+import styles from "../styles/aboutcard.module.css";
 
 const SkillsList: FC<{ header?: string; skillsList: string[] }> = ({
   header,

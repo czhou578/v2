@@ -1,7 +1,7 @@
+import Script from "next/script";
 import { useEffect } from "react";
 import { programmerSVG } from "../../scripts/script";
 import styles from "../../styles/svg.module.css";
-import Script from "next/script";
 
 const Programmer: React.FC = () => {
   useEffect(() => {

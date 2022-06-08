@@ -1,19 +1,19 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkIcon from "@mui/icons-material/Link";
 import Image from "next/image";
 import Link from "next/link";
-import ProjectSkillsList from "./ProjectSkillsList";
 import styles from "../styles/projectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 import {
-  dcParagraph,
   ayParagraph,
   cwParagraph,
-  wParagraph,
-  youtubeParagraph,
+  dcParagraph,
   ElpisParagraph,
   foodAppParagraph,
+  wParagraph,
+  youtubeParagraph,
 } from "./Descriptions";
-import LinkIcon from "@mui/icons-material/Link";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import ProjectSkillsList from "./ProjectSkillsList";
 
 const elucidations = [
   dcParagraph,
