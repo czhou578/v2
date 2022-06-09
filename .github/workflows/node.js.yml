@@ -10,6 +10,21 @@ on:
     branches: [main]
 
 jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16.1"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+      - name: Prettier
+        run: npx prettier --check .
+        working-directory: v2-2
   build:
     runs-on: ubuntu-latest
 
@@ -33,3 +48,22 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: out # The folder the action should deploy.
+
+
+        # webpack:
+  #   name: Typescript
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #     - name: Setup Node
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: "16.1"
+  #         cache: "npm"
+  #         cache-dependency-path: package-lock.json
+  #     - name: Build
+  #       run: |
+  #         npm ci
+  #         npm run typescript
+  #         npm run build
