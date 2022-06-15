@@ -116,14 +116,13 @@ const ProjectCardContainer: React.FC = () => {
         }
         description={
           <ProjectDescription
-            header="StreetFoodLove Capstone Project (In progress)"
+            header="StreetFoodLove Capstone Project"
             elucidation={elucidations[6]}
           />
         }
         githubLink="https://github.com/bcfoodapp/streetfoodlove"
         hostingLink="https://bcfoodapp.github.io/streetfoodlove/vendors/0be4c03e-130a-40fc-9993-8aa2ba08dbfc"
       />
-
       <ProjectCard
         img={["/images/PE1.png", "/images/PE2.png"]}
         list={
@@ -146,6 +145,50 @@ const ProjectCardContainer: React.FC = () => {
         }
         projectElpis={true}
         githubLink="https://github.com/czhou578/Code-Samples-Project-Elpis"
+      />
+      <ProjectCard
+        img={["/images/W1.png", "/images/W2.png"]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "HTML/CSS Modules",
+              "TypeScript",
+              "React.js",
+              "Express",
+              "MySQL",
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Wordament"
+            elucidation={elucidations[3]}
+          />
+        }
+        githubLink="https://github.com/czhou578/Wordament-v2"
+        hostingLink="https://hopeful-johnson-a48af0.netlify.app/"
+      />
+      <ProjectCard
+        img={["/images/whitehouse1.png", "/images/whitehouse2.png"]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "HTML/CSS",
+              "JavaScript",
+              "React.js",
+              "Firebase",
+              "FEC / Google Civics API",
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="Whitehouse.gov 2025"
+            elucidation={elucidations[1]}
+          />
+        }
+        githubLink="https://github.com/czhou578/AmericanScorecard"
+        hostingLink="https://github.com/czhou578/AmericanScorecard"
       />
       <ProjectCard
         img={["/images/distancecalc1.png", "/images/distancecalc2.png"]}
@@ -171,28 +214,6 @@ const ProjectCardContainer: React.FC = () => {
         hostingLink="https://distance-calculator-a905f.web.app/"
       />
       <ProjectCard
-        img={["/images/whitehouse1.png", "/images/whitehouse2.png"]}
-        list={
-          <ProjectSkillsList
-            skills={[
-              "HTML/CSS",
-              "JavaScript",
-              "React.js",
-              "Firebase",
-              "FEC / Google Civics API",
-            ]}
-          />
-        }
-        description={
-          <ProjectDescription
-            header="Whitehouse.gov 2025"
-            elucidation={elucidations[1]}
-          />
-        }
-        githubLink="https://github.com/czhou578/AmericanScorecard"
-        hostingLink="https://github.com/czhou578/AmericanScorecard"
-      />
-      <ProjectCard
         img={["/images/CW1.png", "/images/CW2.png"]}
         list={
           <ProjectSkillsList
@@ -213,29 +234,6 @@ const ProjectCardContainer: React.FC = () => {
         }
         githubLink="https://github.com/czhou578/CryptoWebsiteMockup"
         hostingLink="https://priceless-curie-d29ee9.netlify.app/"
-      />
-
-      <ProjectCard
-        img={["/images/W1.png", "/images/W2.png"]}
-        list={
-          <ProjectSkillsList
-            skills={[
-              "HTML/CSS Modules",
-              "TypeScript",
-              "React.js",
-              "Express",
-              "MySQL",
-            ]}
-          />
-        }
-        description={
-          <ProjectDescription
-            header="Wordament"
-            elucidation={elucidations[3]}
-          />
-        }
-        githubLink="https://github.com/czhou578/Wordament-v2"
-        hostingLink="https://hopeful-johnson-a48af0.netlify.app/"
       />
 
       <ProjectCard
