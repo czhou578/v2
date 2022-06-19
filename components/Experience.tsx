@@ -19,10 +19,20 @@ const headers = [
   "Writing Tutor",
 ];
 
-const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
-  headers,
-  lists,
-}) => {
+const timeStamps = [
+  "06/2021 - 09/2021",
+  "06/2017 - present",
+  "08/2021 - 06/2022",
+  "08/2020 - present",
+  "08/2017 - 03/2020",
+  "06/2019 - 08/2019",
+  "08/2017 - 02/2018",
+];
+
+const Experience: React.FC<{
+  headers: string[];
+  lists: JSX.Element[];
+}> = ({ headers, lists }) => {
   const ref = React.useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -74,7 +84,8 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
 const ExperienceList: React.FC<{
   logo: StaticImageData;
   elements: string[];
-}> = ({ logo, elements }) => {
+  timeStampsIndex: number;
+}> = ({ logo, elements, timeStampsIndex }) => {
   return (
     <div className="listWrapper">
       <Image
@@ -90,6 +101,9 @@ const ExperienceList: React.FC<{
           return <li key={key}>{element}</li>;
         })}
       </ul>
+      <div className="times">
+        <h3>{timeStamps[timeStampsIndex]}</h3>
+      </div>
     </div>
   );
 };
@@ -101,6 +115,7 @@ const ExperienceContainer: React.FC = () => {
         headers={headers}
         lists={[
           <ExperienceList
+            timeStampsIndex={0}
             elements={[
               `Designed / developed a serverless web app that would be used by New York public school 
               teachers to monitor and track the academic progress of at-risk high school students.`,
@@ -113,6 +128,7 @@ const ExperienceContainer: React.FC = () => {
             logo={PencilLogo}
           />,
           <ExperienceList
+            timeStampsIndex={1}
             elements={[
               `Promoted company products through emails, and by giving presentations at events.`,
 
@@ -123,6 +139,7 @@ const ExperienceContainer: React.FC = () => {
             logo={EndevreLogo}
           />,
           <ExperienceList
+            timeStampsIndex={2}
             elements={[
               `Met with faculty and fellow board members to discuss how to grow Bellevue College CS (currently at 150 students).`,
 
@@ -135,6 +152,7 @@ const ExperienceContainer: React.FC = () => {
             logo={BellevueCollegeLogo}
           />,
           <ExperienceList
+            timeStampsIndex={3}
             elements={[
               `Created websites and designs for fun using various frontend technologies like React,
               UI frameworks like Semantic UI, and Typescript.`,
@@ -146,6 +164,7 @@ const ExperienceContainer: React.FC = () => {
             logo={SelfEmployedLogo}
           />,
           <ExperienceList
+            timeStampsIndex={4}
             elements={[
               `Writing about history, and other topics, with over 25 million answer views since 2017.`,
 
@@ -156,6 +175,7 @@ const ExperienceContainer: React.FC = () => {
             logo={QuoraLogo}
           />,
           <ExperienceList
+            timeStampsIndex={5}
             elements={[
               `Assisted clients with publishing articles on Quora.`,
 
@@ -166,6 +186,7 @@ const ExperienceContainer: React.FC = () => {
             logo={UpworkLogo}
           />,
           <ExperienceList
+            timeStampsIndex={6}
             elements={[
               `Helped tutor Cupertino High School sophomores with improving their writing.`,
 
