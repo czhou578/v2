@@ -44,11 +44,25 @@
 
 .experience-container {
   margin-bottom: 100px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .experHeader {
   margin-left: 20px;
+}
+
+.listWrapper {
+  display: flex;
+  width: 200%;
+  max-height: 250px;
+}
+
+.expElement {
+  width: 500px;
+}
+
+.expImage {
+  float: left;
 }
 
 @media screen and (min-width: 902px) and (max-width: 1520px) {

@@ -1,9 +1,18 @@
+import Image from "next/image";
 import React, { useEffect } from "react";
+import BellevueCollegeLogo from "../public/images/BellevueCollegeLogo.png";
+import CHSLogo from "../public/images/CupertinoHighLogo.jpg";
+import EndevreLogo from "../public/images/endevreLogo.jpg";
+import PencilLogo from "../public/images/pencil.jpg";
+import QuoraLogo from "../public/images/QuoraLogo.png";
+import SelfEmployedLogo from "../public/images/SelfEmployedLogo.jpg";
+import UpworkLogo from "../public/images/upworkLogo.png";
 import openCity from "../scripts/tab";
 
 const headers = [
   "Project Elpis Intern",
   "Endevre Technologies",
+  "Bellevue College CS SAB",
   "Self-Employed",
   "Quora",
   "Upwork Freelancer",
@@ -62,9 +71,20 @@ const Experience: React.FC<{ headers: string[]; lists: JSX.Element[] }> = ({
   );
 };
 
-const ExperienceList: React.FC<{ elements: string[] }> = ({ elements }) => {
+const ExperienceList: React.FC<{
+  logo: StaticImageData;
+  elements: string[];
+}> = ({ logo, elements }) => {
   return (
-    <div>
+    <div className="listWrapper">
+      <Image
+        src={logo}
+        alt="Image"
+        width="150px"
+        height="150px"
+        objectFit="contain"
+        className="expImage"
+      />
       <ul className="expElement">
         {elements.map((element, key) => {
           return <li key={key}>{element}</li>;
@@ -90,6 +110,7 @@ const ExperienceContainer: React.FC = () => {
               `Used React to implement UI components on the frontend and AWS for storing media and files 
               on the backend.`,
             ]}
+            logo={PencilLogo}
           />,
           <ExperienceList
             elements={[
@@ -99,6 +120,19 @@ const ExperienceContainer: React.FC = () => {
 
               `Designed company websites and page layouts for products.`,
             ]}
+            logo={EndevreLogo}
+          />,
+          <ExperienceList
+            elements={[
+              `Met with faculty and fellow board members to discuss how to grow Bellevue College CS (currently at 150 students).`,
+
+              `Helped facilitate constructive communication between faculty and students with regards to curriculum and structure
+              of classes.`,
+
+              `Planned out budget, totaling around $1000, for usage by the CS department for the 2023 school year. Managed and kept
+              records of all expenses that were spent by Bellevue College CS board members.`,
+            ]}
+            logo={BellevueCollegeLogo}
           />,
           <ExperienceList
             elements={[
@@ -109,6 +143,7 @@ const ExperienceContainer: React.FC = () => {
 
               `Developed a replica of the popular Microsoft Wordament game using Typescript, and React.`,
             ]}
+            logo={SelfEmployedLogo}
           />,
           <ExperienceList
             elements={[
@@ -118,6 +153,7 @@ const ExperienceContainer: React.FC = () => {
 
               `Admin and moderator of multiple blogs about finance and interesting information.`,
             ]}
+            logo={QuoraLogo}
           />,
           <ExperienceList
             elements={[
@@ -127,6 +163,7 @@ const ExperienceContainer: React.FC = () => {
 
               `Used outreach abilities on Quora to drive traffic to client's websites.`,
             ]}
+            logo={UpworkLogo}
           />,
           <ExperienceList
             elements={[
@@ -136,6 +173,7 @@ const ExperienceContainer: React.FC = () => {
 
               `Coordinated with high school/college teachers with tutoring progress.`,
             ]}
+            logo={CHSLogo}
           />,
         ]}
       />

@@ -1,12 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Script from "next/script";
-import Aboutcard from "../components/Aboutcard";
+import Aboutcard, { SkillsList } from "../components/Aboutcard";
 import DesignsContainer from "../components/DesignsContainer";
 import ExperienceContainer from "../components/Experience";
 import HeaderBar from "../components/HeaderBar";
 import Introduction from "../components/Introduction";
 import MediaLinks from "../components/MediaLinks";
+import NoteWorthyProjects from "../components/NoteWorthyProjects";
 import ProjectCardContainer from "../components/ProjectCard";
 import Design from "../public/svgs/Design";
 import Programmer from "../public/svgs/Programmer";
@@ -33,15 +34,54 @@ const Home: NextPage = () => {
           <div className={styles.aboutCard} id="div-1">
             <Aboutcard />
           </div>
-          <div className={styles.experience} id="div-2">
+          <div className={styles.skillsList} id="div-2">
+            <SkillsList
+              header="Skills"
+              techList={[
+                "React",
+                "HTML",
+                "CSS",
+                "Typescript",
+                "JavaScript(ES6)",
+                "Redux",
+                "Webpack",
+                "AWS",
+                "SQL",
+              ]}
+              toolsList={[
+                "Googling",
+                "VSCode",
+                "Jira",
+                "Wireframes",
+                "Github",
+                "Scrum",
+                "Agile",
+                "Speaking",
+                "Writing",
+              ]}
+              learningList={[
+                "GraphQL",
+                "CI/CD pipeline",
+                "Optimizing Performance",
+                "Next.js",
+                "Prototyping",
+                "Unit Testing",
+              ]}
+            />
+          </div>
+          <div className={styles.experience} id="div-3">
             <h2 className={styles.expHeader}>Experience</h2>
             <ExperienceContainer />
           </div>
-          <div className={styles.projects} id="div-3">
+          <div className={styles.projects} id="div-4">
             <h2 className={styles.expHeader}>My Projects</h2>
             <ProjectCardContainer />
           </div>
-          <div className={styles.designs} id="div-4">
+          <div className={styles.moreProjects} id="div-5">
+            <h2 className={styles.moreProjHeader}>Noteworthy Projects</h2>
+            <NoteWorthyProjects />
+          </div>
+          <div className={styles.designs} id="div-6">
             <h2 className={styles.designHeader}>My Designs</h2>
             <DesignsContainer />
           </div>

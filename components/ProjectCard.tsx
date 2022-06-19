@@ -101,7 +101,7 @@ const ProjectCardContainer: React.FC = () => {
   return (
     <div className={styles.parentWrapper}>
       <ProjectCard
-        img={["/images/Sapp.png", "/images/Sapp2.png"]}
+        img={["images/Sapp.png", "images/Sapp2.png"]}
         list={
           <ProjectSkillsList
             skills={[
@@ -161,7 +161,7 @@ const ProjectCardContainer: React.FC = () => {
         }
         description={
           <ProjectDescription
-            header="Wordament"
+            header="Wordament / Wordle"
             elucidation={elucidations[3]}
           />
         }

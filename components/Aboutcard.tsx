@@ -3,15 +3,18 @@ import { FC } from "react";
 import profilePic from "../public/images/70.jpg";
 import styles from "../styles/aboutcard.module.css";
 
-const SkillsList: FC<{ header?: string; skillsList: string[] }> = ({
-  header,
-  skillsList,
-}) => {
+export const SkillsList: FC<{
+  header?: string;
+  techList: string[];
+  toolsList: string[];
+  learningList: string[];
+}> = ({ header, techList, toolsList, learningList }) => {
   return (
-    <div>
+    <>
       <h3 className={styles.skillsHeader}>{header}</h3>
+      <h4 style={{ color: "lightblue", fontSize: "1rem" }}>Technologies:</h4>
       <ul className={styles.list}>
-        {skillsList.map((element, key) => {
+        {techList.map((element, key) => {
           return (
             <li key={key} className={styles.listElements}>
               {element}
@@ -19,7 +22,29 @@ const SkillsList: FC<{ header?: string; skillsList: string[] }> = ({
           );
         })}
       </ul>
-    </div>
+      <h4 style={{ color: "lightblue", fontSize: "1rem" }}>Tools:</h4>
+      <ul className={styles.list}>
+        {toolsList.map((element, key) => {
+          return (
+            <li key={key} className={styles.listElements}>
+              {element}
+            </li>
+          );
+        })}
+      </ul>
+      <h4 style={{ color: "lightblue", fontSize: "1rem" }}>
+        Currently Learning:
+      </h4>
+      <ul className={styles.list}>
+        {learningList.map((element, key) => {
+          return (
+            <li key={key} className={styles.listElements}>
+              {element}
+            </li>
+          );
+        })}
+      </ul>
+    </>
   );
 };
 
@@ -51,21 +76,6 @@ const Aboutcard: FC = () => {
             className={styles.img}
           />
         </div>
-      </div>
-      <div>
-        <SkillsList
-          header="Skills"
-          skillsList={[
-            "React",
-            "HTML",
-            "CSS",
-            "Typescript",
-            "JavaScript(ES6)",
-            "Redux",
-            "Webpack",
-            "AWS",
-          ]}
-        />
       </div>
     </div>
   );

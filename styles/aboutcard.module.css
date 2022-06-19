@@ -14,7 +14,12 @@
   color: rgba(255, 255, 255) !important;
   list-style-type: lower-roman;
   display: inline;
-  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.list {
+  display: inline-block;
+  padding-left: 0%;
 }
 
 .img {
@@ -61,8 +66,8 @@
 }
 
 .skillsHeader {
-  color: white;
-  margin-left: 10%;
+  color: #e6c6f5;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 1390px) and (max-width: 1693px) {

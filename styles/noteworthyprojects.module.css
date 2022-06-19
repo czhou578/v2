@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+}
+
+.wrapper {
+  border: 2px solid rgb(132, 132, 192);
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 100px;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.wrapper > p {
+  font-size: 14px;
+}
+
+.list > li {
+  list-style-type: none;
+}
+
+.list {
+  margin-bottom: -22px;
+}

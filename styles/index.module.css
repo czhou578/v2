@@ -9,7 +9,11 @@
 }
 
 .aboutCard {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+}
+
+.skillsList {
+  margin-left: 30%;
 }
 
 .expHeader {
@@ -19,14 +23,25 @@
 .experience {
   margin-top: 200px;
   margin-left: 27%;
+  min-height: 700px;
 }
 
 .projects {
   margin-left: 16%;
 }
 
+.moreProjects {
+  margin-top: 200px;
+  margin-left: 30%;
+}
+
+.moreProjHeader {
+  margin-bottom: 50px;
+}
+
 .expHeader,
-.designHeader {
+.designHeader,
+.moreProjHeader {
   color: #e6c6f5;
   font-size: 1.8rem;
   white-space: pre-wrap;
@@ -50,7 +65,6 @@
   margin-left: auto;
   margin-right: auto;
   padding-right: auto;
-  margin-bottom: 100px;
 }
 
 .icons > h2 {
@@ -62,6 +76,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 430px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1370px) {

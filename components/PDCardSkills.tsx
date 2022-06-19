@@ -5,7 +5,7 @@ const PDCardSkills: React.FC<{ elements: string[] }> = ({ elements }) => {
     <div>
       <ul>
         {elements.map((element, key) => {
-          <li key={key}>{element}</li>;
+          return <li key={key}>{element}</li>;
         })}
       </ul>
     </div>
