@@ -35,8 +35,8 @@ const Home: NextPage = () => {
             <Aboutcard />
           </div>
           <div className={styles.skillsList} id="div-2">
+            <h3 style={{ color: "#e6c6f5", fontSize: "1.8rem" }}>Skills</h3>
             <SkillsList
-              header="Skills"
               techList={[
                 "React",
                 "HTML",

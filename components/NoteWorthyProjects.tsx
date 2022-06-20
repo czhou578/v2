@@ -15,7 +15,13 @@ const NoteWorthyProjects: FC = () => {
       <NoteWorthyProjectCard
         header="Personal Website V1"
         githubLink="https://github.com/czhou578/Personal-Website"
-        description="This is the very first version of my personal website, which I'm a little embarassed to look at."
+        description="This is the very first version of my personal website, using basic front end technologies."
+        techUsed={["HTML CSS JS"]}
+      />
+      <NoteWorthyProjectCard
+        header="Wordament V1"
+        githubLink="https://github.com/czhou578/Wordament"
+        description="This is the very first version of Wordament, using basic web technologies."
         techUsed={["HTML CSS JS"]}
       />
     </div>

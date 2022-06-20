@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;0,700;1,900&family=Source+Sans+Pro:wght@300;400&display=swap");
 
+.skillsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.skillsWrapper > div {
+  margin-right: 80px;
+}
+
 .wrapper {
   border: 2px solid lightblue;
   border-radius: 3px;
@@ -12,9 +21,9 @@
 
 .listElements {
   color: rgba(255, 255, 255) !important;
-  list-style-type: lower-roman;
-  display: inline;
   margin-right: 20px;
+  margin-top: 10px;
+  list-style-type: disc;
 }
 
 .list {

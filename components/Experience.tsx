@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import BellevueCollegeLogo from "../public/images/BellevueCollegeLogo.png";
 import CHSLogo from "../public/images/CupertinoHighLogo.jpg";
 import EndevreLogo from "../public/images/endevreLogo.jpg";
+import IOIntel from "../public/images/IO_Intelligence.jpg";
 import PencilLogo from "../public/images/pencil.jpg";
 import QuoraLogo from "../public/images/QuoraLogo.png";
 import SelfEmployedLogo from "../public/images/SelfEmployedLogo.jpg";
@@ -10,6 +11,7 @@ import UpworkLogo from "../public/images/upworkLogo.png";
 import openCity from "../scripts/tab";
 
 const headers = [
+  "IOIntelligence",
   "Project Elpis Intern",
   "Endevre Technologies",
   "Bellevue College CS SAB",
@@ -20,6 +22,7 @@ const headers = [
 ];
 
 const timeStamps = [
+  "07/2022 - 08/2022",
   "06/2021 - 09/2021",
   "06/2017 - present",
   "08/2021 - 06/2022",
@@ -116,6 +119,11 @@ const ExperienceContainer: React.FC = () => {
         lists={[
           <ExperienceList
             timeStampsIndex={0}
+            elements={[`Coming Soon!`]}
+            logo={IOIntel}
+          />,
+          <ExperienceList
+            timeStampsIndex={1}
             elements={[
               `Designed / developed a serverless web app that would be used by New York public school 
               teachers to monitor and track the academic progress of at-risk high school students.`,
@@ -128,7 +136,7 @@ const ExperienceContainer: React.FC = () => {
             logo={PencilLogo}
           />,
           <ExperienceList
-            timeStampsIndex={1}
+            timeStampsIndex={2}
             elements={[
               `Promoted company products through emails, and by giving presentations at events.`,
 
@@ -139,7 +147,7 @@ const ExperienceContainer: React.FC = () => {
             logo={EndevreLogo}
           />,
           <ExperienceList
-            timeStampsIndex={2}
+            timeStampsIndex={3}
             elements={[
               `Met with faculty and fellow board members to discuss how to grow Bellevue College CS (currently at 150 students).`,
 
@@ -152,7 +160,7 @@ const ExperienceContainer: React.FC = () => {
             logo={BellevueCollegeLogo}
           />,
           <ExperienceList
-            timeStampsIndex={3}
+            timeStampsIndex={4}
             elements={[
               `Created websites and designs for fun using various frontend technologies like React,
               UI frameworks like Semantic UI, and Typescript.`,
@@ -164,7 +172,7 @@ const ExperienceContainer: React.FC = () => {
             logo={SelfEmployedLogo}
           />,
           <ExperienceList
-            timeStampsIndex={4}
+            timeStampsIndex={5}
             elements={[
               `Writing about history, and other topics, with over 25 million answer views since 2017.`,
 
@@ -175,7 +183,7 @@ const ExperienceContainer: React.FC = () => {
             logo={QuoraLogo}
           />,
           <ExperienceList
-            timeStampsIndex={5}
+            timeStampsIndex={6}
             elements={[
               `Assisted clients with publishing articles on Quora.`,
 
@@ -186,7 +194,7 @@ const ExperienceContainer: React.FC = () => {
             logo={UpworkLogo}
           />,
           <ExperienceList
-            timeStampsIndex={6}
+            timeStampsIndex={7}
             elements={[
               `Helped tutor Cupertino High School sophomores with improving their writing.`,
 

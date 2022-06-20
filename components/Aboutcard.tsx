@@ -10,41 +10,56 @@ export const SkillsList: FC<{
   learningList: string[];
 }> = ({ header, techList, toolsList, learningList }) => {
   return (
-    <>
-      <h3 className={styles.skillsHeader}>{header}</h3>
-      <h4 style={{ color: "lightblue", fontSize: "1rem" }}>Technologies:</h4>
-      <ul className={styles.list}>
-        {techList.map((element, key) => {
-          return (
-            <li key={key} className={styles.listElements}>
-              {element}
-            </li>
-          );
-        })}
-      </ul>
-      <h4 style={{ color: "lightblue", fontSize: "1rem" }}>Tools:</h4>
-      <ul className={styles.list}>
-        {toolsList.map((element, key) => {
-          return (
-            <li key={key} className={styles.listElements}>
-              {element}
-            </li>
-          );
-        })}
-      </ul>
-      <h4 style={{ color: "lightblue", fontSize: "1rem" }}>
-        Currently Learning:
-      </h4>
-      <ul className={styles.list}>
-        {learningList.map((element, key) => {
-          return (
-            <li key={key} className={styles.listElements}>
-              {element}
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <div className={styles.skillsWrapper}>
+      <div>
+        <h4
+          style={{ color: "lightblue", fontSize: "1rem", marginLeft: "-15px" }}
+        >
+          Technologies:
+        </h4>
+        <ul className={styles.list}>
+          {techList.map((element, key) => {
+            return (
+              <li key={key} className={styles.listElements}>
+                {element}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div>
+        <h4
+          style={{ color: "lightblue", fontSize: "1rem", marginLeft: "-15px" }}
+        >
+          Tools:
+        </h4>
+        <ul className={styles.list}>
+          {toolsList.map((element, key) => {
+            return (
+              <li key={key} className={styles.listElements}>
+                {element}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div>
+        <h4
+          style={{ color: "lightblue", fontSize: "1rem", marginLeft: "-15px" }}
+        >
+          Currently Learning:
+        </h4>
+        <ul className={styles.list}>
+          {learningList.map((element, key) => {
+            return (
+              <li key={key} className={styles.listElements}>
+                {element}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
   );
 };
 
