@@ -34,14 +34,14 @@ const Home: NextPage = () => {
           <div className={styles.aboutCard} id="div-1">
             <Aboutcard />
           </div>
-          <div className={styles.skillsList} id="div-2">
+          <div className={styles.skillsList}>
             <h3 style={{ color: "#e6c6f5", fontSize: "1.8rem" }}>Skills</h3>
             <SkillsList
               techList={[
                 "React",
                 "HTML",
                 "CSS",
-                "Typescript",
+                "TypeScript",
                 "JavaScript(ES6)",
                 "Redux",
                 "Webpack",
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                 "VSCode",
                 "Jira",
                 "Wireframes",
-                "Github",
+                "Git",
                 "Scrum",
                 "Agile",
                 "Speaking",
@@ -61,6 +61,7 @@ const Home: NextPage = () => {
               ]}
               learningList={[
                 "GraphQL",
+                "Docker",
                 "CI/CD pipeline",
                 "Optimizing Performance",
                 "Next.js",
@@ -69,19 +70,19 @@ const Home: NextPage = () => {
               ]}
             />
           </div>
-          <div className={styles.experience} id="div-3">
+          <div className={styles.experience} id="div-2">
             <h2 className={styles.expHeader}>Experience</h2>
             <ExperienceContainer />
           </div>
-          <div className={styles.projects} id="div-4">
+          <div className={styles.projects} id="div-3">
             <h2 className={styles.expHeader}>My Projects</h2>
             <ProjectCardContainer />
           </div>
-          <div className={styles.moreProjects} id="div-5">
+          <div className={styles.moreProjects}>
             <h2 className={styles.moreProjHeader}>Noteworthy Projects</h2>
             <NoteWorthyProjects />
           </div>
-          <div className={styles.designs} id="div-6">
+          <div className={styles.designs} id="div-4">
             <h2 className={styles.designHeader}>My Designs</h2>
             <DesignsContainer />
           </div>

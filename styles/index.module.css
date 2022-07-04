@@ -50,7 +50,7 @@
 
 .designs {
   margin-top: 50px;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-bottom: 10%;
   position: relative;
 }
@@ -97,3 +97,17 @@
     margin-left: 12%;
   }
 }
+
+@media screen and (min-width: 1232px) and (max-width: 1300px) {
+  .moreProjects {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1232px) {
+  .moreProjects {
+    margin-left: 100px;
+  }
+}
+
+

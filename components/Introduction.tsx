@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styles from "../styles/introduction.module.css";
 
 const Introduction: FC = () => {
@@ -17,7 +17,7 @@ const Introduction: FC = () => {
         <div className={styles.c2}>
           <div className={styles.description2}>
             Currently looking for technical work opportunities for Summer
-            2022...
+            2023...
           </div>
         </div>
       </h3>
