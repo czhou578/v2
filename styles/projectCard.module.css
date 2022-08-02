@@ -61,7 +61,7 @@
   margin-right: 4%;
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1571px) {
+@media screen and (min-width: 1440px) and (max-width: 1657px) {
   .container {
     margin-right: 12%;
   }
@@ -74,7 +74,6 @@
 @media screen and (min-width: 1354px) and (max-width: 1439px) {
   .container {
     margin-right: 12%;
-    /* margin-left: -10%; */
     padding-top: 40px;
   }
 

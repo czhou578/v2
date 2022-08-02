@@ -23,7 +23,7 @@
   margin-top: -60px;
 }
 
-@media screen and (min-width: 1480px) and (max-width: 1549px) {
+@media screen and (min-width: 1575px) and (max-width: 1677px) {
   .uiWrapper,
   .bcWrapper,
   .elpisWrapper,
@@ -32,12 +32,21 @@
   }
 }
 
-@media screen and (min-width: 1339px) and (max-width: 1480px) {
+@media screen and (min-width: 1480px) and (max-width: 1575px) {
   .uiWrapper,
   .bcWrapper,
   .elpisWrapper,
   .foodWrapper {
     margin-left: -200px;
+  }
+}
+
+@media screen and (min-width: 1339px) and (max-width: 1480px) {
+  .uiWrapper,
+  .bcWrapper,
+  .elpisWrapper,
+  .foodWrapper {
+    margin-left: -300px;
   }
 
   .designContainer {
@@ -55,7 +64,7 @@
   }
 
   .designContainer {
-    margin-left: 5%;
+    margin-left: 25%;
     margin-right: 18px;
   }
 }

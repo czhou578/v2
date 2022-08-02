@@ -9,6 +9,6 @@ module.exports = {
     path: "/",
   },
   typescript: {
-    ignoreBuildErrors: true
-  }
+    ignoreBuildErrors: true,
+  },
 };

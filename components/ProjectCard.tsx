@@ -106,11 +106,11 @@ const ProjectCardContainer: React.FC = () => {
           <ProjectSkillsList
             skills={[
               "HTML/CSS Modules",
-              "Typescript",
+              "TypeScript",
               "React.js",
               "Semantic UI",
               "AWS",
-              "Redux Toolkit",
+              "Redux",
             ]}
           />
         }
