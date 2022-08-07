@@ -22,7 +22,7 @@ const headers = [
 ];
 
 const timeStamps = [
-  "07/2022 - 08/2022",
+  "07/2022 - present",
   "06/2021 - 09/2021",
   "06/2017 - present",
   "08/2021 - 06/2022",
@@ -119,7 +119,10 @@ const ExperienceContainer: React.FC = () => {
         lists={[
           <ExperienceList
             timeStampsIndex={0}
-            elements={[`Coming Soon!`]}
+            elements={[
+              `Used Chakra UI, React, Express.js and MySQL to develop a prototype of a full stack, 5 page application dashboard that displays networking analytics
+            coming from multiple company-owned wireless devices around the world. `,
+            ]}
             logo={IOIntel}
           />,
           <ExperienceList
@@ -131,7 +134,7 @@ const ExperienceContainer: React.FC = () => {
               `Made final design choices for UI components.`,
 
               `Used React to implement UI components on the frontend and AWS for storing media and files 
-              on the backend.`,
+              on the backend. Queried AWS DynamoDB using GraphQL.`,
             ]}
             logo={PencilLogo}
           />,
@@ -140,7 +143,7 @@ const ExperienceContainer: React.FC = () => {
             elements={[
               `Promoted company products through emails, and by giving presentations at events.`,
 
-              `Secured sponsorships with various hackathon events.`,
+              `Secured sponsorships with multiple hackathon events at high schools throughout the Bay Area.`,
 
               `Designed company websites and page layouts for products.`,
             ]}
