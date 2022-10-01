@@ -72,10 +72,9 @@ const Aboutcard: FC = () => {
       <div className={styles.paragraphpic}>
         <div className={styles.paragraphBox}>
           <pre className={styles.paragraph}>
-            I am a CS graduate of Bellevue College and an incoming UIUC CS
-            Masters student. My passion is in web development, using my
-            knowledge of front end technologies to architect websites for
-            various for-good causes. As someone with experience in designing
+            I am a UIUC CS Masters student. My passion is in web development,
+            using my knowledge of front end technologies to architect websites
+            for various for-good causes. As someone with experience in designing
             logos and simple designs, I strive to bring some elements of the
             future into my creations. In addition, I have many years of
             experience writing online, allowing me to share my ideas and

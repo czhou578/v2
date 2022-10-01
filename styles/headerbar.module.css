@@ -55,3 +55,7 @@
 .taskbar .listItem:nth-child(5) {
   order: 5;
 }
+
+.taskbar .listItem:nth-child(6) {
+  order: 6;
+}

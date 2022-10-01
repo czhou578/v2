@@ -1,0 +1,36 @@
+.globalwrapper {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-bottom: 40px;
+}
+
+.school {
+  text-align: left;
+}
+
+.degreedatewrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school > h2 {
+  margin-left: auto;
+  color: rgb(172, 128, 255) !important
+}
+
+.date > h3 {
+  color: rgb(172, 128, 255) !important
+}
+
+.degree > h3 {
+  color: lightblue;
+}
+
+/* .classes {
+  margin-left: 270px;
+} */
+
+.classes > ul > li {
+  display: inline-block;
+  margin-left: 15px;
+}

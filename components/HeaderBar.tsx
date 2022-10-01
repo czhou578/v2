@@ -43,16 +43,21 @@ const HeaderBar: FC = () => {
             </li>
             <li className={styles.listItem}>
               <Link href="#div-2" scroll={false}>
+                <a>Education</a>
+              </Link>
+            </li>{" "}
+            <li className={styles.listItem}>
+              <Link href="#div-3" scroll={false}>
                 <a>Experience</a>
               </Link>
             </li>
             <li className={styles.listItem}>
-              <Link href="#div-3" scroll={false}>
+              <Link href="#div-4" scroll={false}>
                 <a>Projects</a>
               </Link>
             </li>
             <li className={styles.listItem}>
-              <Link href="#div-4" scroll={false}>
+              <Link href="#div-5" scroll={false}>
                 <a>Designs</a>
               </Link>
             </li>

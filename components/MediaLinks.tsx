@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import Script from "next/script";
 
 const MediaLinks: React.FC = () => {
@@ -24,6 +25,9 @@ const MediaLinks: React.FC = () => {
       </a>
       <a href="https://www.worldcubeassociation.org/persons/2014ZHOU16">
         <i className="fa-solid fa-cube"></i>
+      </a>
+      <a href="https://leetcode.com/colizu2020/">
+        <Icon icon="simple-icons:leetcode" color="white" />{" "}
       </a>
     </div>
   );

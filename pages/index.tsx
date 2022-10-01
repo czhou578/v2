@@ -3,6 +3,7 @@ import Head from "next/head";
 import Script from "next/script";
 import Aboutcard, { SkillsList } from "../components/Aboutcard";
 import DesignsContainer from "../components/DesignsContainer";
+import Education from "../components/Education";
 import ExperienceContainer from "../components/Experience";
 import HeaderBar from "../components/HeaderBar";
 import Introduction from "../components/Introduction";
@@ -33,6 +34,39 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.aboutCard} id="div-1">
             <Aboutcard />
+          </div>
+          <div className={styles.education} id="div-2">
+            <h2 className={styles.educationHeader}>Education</h2>
+            <Education
+              school="University of Illinois Urbana-Champaign"
+              degreeLevel="Master of Computer Science"
+              date="August 2022 - Present"
+              relevantClasses={["User-Interface Design", "Databases"]}
+            />
+            <Education
+              school="Bellevue College"
+              degreeLevel="Bachelor of Science in Computer Science"
+              date="September 2019 - June 2022"
+              relevantClasses={[
+                "Algorithms",
+                "Cloud Computing",
+                "Software Engineering",
+                "Data Structures",
+                "Computer Networks",
+                "Operating Systems",
+              ]}
+            />
+            <Education
+              school="Cupertino High School"
+              degreeLevel="High School Diploma"
+              date="August 2015 - June 2019"
+              relevantClasses={[
+                "AP Computer Science A",
+                "AP Statistics",
+                "AP Physics C: Mechanics",
+                "AP Chemistry",
+              ]}
+            />
           </div>
           <div className={styles.skillsList}>
             <h3 style={{ color: "#e6c6f5", fontSize: "1.8rem" }}>Skills</h3>
@@ -70,11 +104,11 @@ const Home: NextPage = () => {
               ]}
             />
           </div>
-          <div className={styles.experience} id="div-2">
+          <div className={styles.experience} id="div-3">
             <h2 className={styles.expHeader}>Experience</h2>
             <ExperienceContainer />
           </div>
-          <div className={styles.projects} id="div-3">
+          <div className={styles.projects} id="div-4">
             <h2 className={styles.expHeader}>My Projects</h2>
             <ProjectCardContainer />
           </div>
@@ -82,7 +116,7 @@ const Home: NextPage = () => {
             <h2 className={styles.moreProjHeader}>Noteworthy Projects</h2>
             <NoteWorthyProjects />
           </div>
-          <div className={styles.designs} id="div-4">
+          <div className={styles.designs} id="div-5">
             <h2 className={styles.designHeader}>My Designs</h2>
             <DesignsContainer />
           </div>
