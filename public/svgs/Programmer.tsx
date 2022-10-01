@@ -149,7 +149,8 @@ const Programmer: React.FC = () => {
         <div className={styles.programCtn}>
           <h2 className={styles.header}>Web Developer</h2>
           <p className={styles.paragraph}>
-            I'll help you connect the worlds of design and development.
+            I'll help you develop fast, and fluid applications that make a real
+            world impact.
           </p>
         </div>
       </div>

@@ -2,6 +2,9 @@
   width: 70vw;
   margin-left: 15vw;
   margin-bottom: 40px;
+  border: 2px solid #d0bcff;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 .school {
@@ -26,11 +29,7 @@
   color: lightblue;
 }
 
-/* .classes {
-  margin-left: 270px;
-} */
-
-.classes > ul > li {
+.classes > ul > li, .activities > ul > li {
   display: inline-block;
   margin-left: 15px;
 }

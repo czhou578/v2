@@ -41,30 +41,43 @@ const Home: NextPage = () => {
               school="University of Illinois Urbana-Champaign"
               degreeLevel="Master of Computer Science"
               date="August 2022 - Present"
-              relevantClasses={["User-Interface Design", "Databases"]}
+              activities={["CS 411 Project Team Captain"]}
+              relevantClasses={[
+                "User-Interface Design,",
+                "Databases,",
+                "Advanced Data Management",
+              ]}
             />
             <Education
               school="Bellevue College"
               degreeLevel="Bachelor of Science in Computer Science"
               date="September 2019 - June 2022"
+              activities={["CS Student Advisory Board Treasurer"]}
               relevantClasses={[
-                "Algorithms",
-                "Cloud Computing",
-                "Software Engineering",
-                "Data Structures",
-                "Computer Networks",
-                "Operating Systems",
+                "Algorithms,",
+                "Cloud Computing,",
+                "Software Engineering,",
+                "Data Structures,",
+                "Computer Networks,",
+                "Operating Systems,",
+                "Linear Algebra,",
+                "Discrete Math",
               ]}
             />
             <Education
               school="Cupertino High School"
               degreeLevel="High School Diploma"
               date="August 2015 - June 2019"
+              activities={[
+                "Speech and Debate Club Member,",
+                "Sophomore English Tutor",
+              ]}
               relevantClasses={[
-                "AP Computer Science A",
-                "AP Statistics",
-                "AP Physics C: Mechanics",
-                "AP Chemistry",
+                "AP Computer Science A,",
+                "AP Statistics,",
+                "AP Physics C: Mechanics,",
+                "AP Chemistry,",
+                "AP United States History",
               ]}
             />
           </div>
@@ -94,13 +107,13 @@ const Home: NextPage = () => {
                 "Writing",
               ]}
               learningList={[
-                "GraphQL",
-                "Docker",
+                "Containerization",
                 "CI/CD pipeline",
                 "Optimizing Performance",
                 "Next.js",
                 "Prototyping",
                 "Unit Testing",
+                "Responsive Design",
               ]}
             />
           </div>

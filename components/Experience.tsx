@@ -200,9 +200,6 @@ const ExperienceContainer: React.FC = () => {
             timeStampsIndex={7}
             elements={[
               `Helped tutor Cupertino High School sophomores with improving their writing.`,
-
-              `Assisted Bellevue College classmates online and in-person with their research papers.`,
-
               `Coordinated with high school/college teachers with tutoring progress.`,
             ]}
             logo={CHSLogo}
