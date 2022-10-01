@@ -19,7 +19,7 @@
     "@mui/icons-material": "^5.8.3",
     "next": "12.1.6",
     "next-optimized-images": "^2.6.2",
-    "npm-check-updates": "^13.1.2",
+    "npm-check-updates": "^16.3.4",
     "prettier": "^2.6.2",
     "react": "18.1.0",
     "react-dom": "18.1.0"
