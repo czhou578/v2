@@ -1,10 +1,13 @@
 .wrapper {
   position: relative;
-  margin-left: 30px;
 }
 
 .designContainer {
   margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .uiWrapper,
@@ -15,6 +18,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1300px;
+  column-gap: 20px;
+}
+
+.foodWrapper {
+  margin-top: 30px;
 }
 
 .description {
@@ -23,49 +31,17 @@
   margin-top: -60px;
 }
 
-@media screen and (min-width: 1575px) and (max-width: 1677px) {
-  .uiWrapper,
-  .bcWrapper,
-  .elpisWrapper,
-  .foodWrapper {
-    margin-left: -100px;
-  }
+.designHeader {
+  position: absolute;
+  left: 20%;
+  color: #e6c6f5;
+  font-size: 1.8rem;
+  white-space: pre-wrap;
 }
 
-@media screen and (min-width: 1480px) and (max-width: 1575px) {
-  .uiWrapper,
-  .bcWrapper,
-  .elpisWrapper,
-  .foodWrapper {
-    margin-left: -200px;
-  }
-}
-
-@media screen and (min-width: 1339px) and (max-width: 1480px) {
-  .uiWrapper,
-  .bcWrapper,
-  .elpisWrapper,
-  .foodWrapper {
-    margin-left: -300px;
-  }
-
+@media screen and (max-width: 1279px) {
   .designContainer {
-    margin-left: 5%;
-  }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1339px) {
-  .uiWrapper,
-  .bcWrapper,
-  .elpisWrapper,
-  .foodWrapper {
-    margin-left: -200px;
-    column-gap: 2px;
-  }
-
-  .designContainer {
-    margin-left: 25%;
-    margin-right: 18px;
+    margin-left: 30% !important;
   }
 }
 

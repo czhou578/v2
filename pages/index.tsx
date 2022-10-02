@@ -129,7 +129,7 @@ const Home: NextPage = () => {
             <NoteWorthyProjects />
           </div>
           <div className={styles.designs} id="div-5">
-            <h2 className={styles.designHeader}>My Designs</h2>
+            {/* <h2 className={styles.designHeader}>My Designs</h2> */}
             <DesignsContainer />
           </div>
           <div className={styles.icons}>

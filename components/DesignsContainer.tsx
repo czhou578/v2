@@ -42,6 +42,7 @@ const DesignCard: React.FC<{ img: StaticImageData; description: string }> = ({
 const DesignsContainer: React.FC = () => {
   return (
     <div className={styles.designContainer}>
+      <h2 className={styles.designHeader}>My Designs</h2>
       <div className={styles.foodWrapper}>
         <DesignCard img={FoodApp1} description={foodApp1Descrip} />
         <DesignCard img={FoodApp2} description={foodApp2Descrip} />
