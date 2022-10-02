@@ -2,6 +2,12 @@
   overscroll-behavior-y: none;
 }
 
+.intro, .aboutCard, .skillsList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .svgContainer {
   margin-left: 10%;
   margin-top: 140px;
@@ -10,11 +16,6 @@
 
 .aboutCard {
   margin-bottom: 200px;
-}
-
-.skillsList {
-  margin-left: 30%;
-  display: inline-block;
 }
 
 .expHeader {
@@ -96,6 +97,12 @@
 @media screen and (max-width: 1370px) {
   .designHeader {
     margin-bottom: -25px;
+  }
+}
+
+@media screen and (max-width: 1268px) {
+  .skillsList {
+    margin-left: 12%;
   }
 }
 

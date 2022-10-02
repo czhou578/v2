@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <HeaderBar />
         <section>
-          <div>
+          <div className={styles.intro}>
             <Introduction />
           </div>
           <div className={styles.svgContainer}>
@@ -82,7 +82,6 @@ const Home: NextPage = () => {
             />
           </div>
           <div className={styles.skillsList}>
-            <h3 style={{ color: "#e6c6f5", fontSize: "1.8rem" }}>Skills</h3>
             <SkillsList
               techList={[
                 "React",

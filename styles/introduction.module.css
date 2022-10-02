@@ -3,9 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,500;0,700;1,900&family=Source+Sans+Pro:wght@300;400&display=swap");
 
 .introContainer {
-  padding-top: 10%;
-  margin-left: 35%;
-  display: inline-block;
+  margin-top: 200px;
 }
 
 .introContainer > h1 {
@@ -75,11 +73,5 @@ h3 .description2 {
   }
   to {
     border-color: orange;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .introContainer {
-    margin-left: 10%;
   }
 }
