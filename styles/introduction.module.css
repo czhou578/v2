@@ -4,6 +4,7 @@
 
 .introContainer {
   margin-top: 200px;
+  /* position: fixed; */
 }
 
 .introContainer > h1 {
@@ -34,7 +35,7 @@
   padding-top: 20px;
 }
 
-h3 .description {
+/* h3 .description {
   font-size: 1rem;
   color: white;
   width: 0;
@@ -56,7 +57,7 @@ h3 .description2 {
   letter-spacing: 0.14 em;
   animation: typing1 6s steps(90, end) forwards, blinking 1.5s infinite;
   animation-delay: 6s;
-}
+} */
 
 @keyframes typing1 {
   from {
