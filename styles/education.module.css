@@ -18,18 +18,19 @@
 
 .school > h2 {
   margin-left: auto;
-  color: rgb(172, 128, 255) !important
+  color: rgb(172, 128, 255) !important;
 }
 
 .date > h3 {
-  color: rgb(172, 128, 255) !important
+  color: rgb(172, 128, 255) !important;
 }
 
 .degree > h3 {
   color: lightblue;
 }
 
-.classes > ul > li, .activities > ul > li {
+.classes > ul > li,
+.activities > ul > li {
   display: inline-block;
   margin-left: 15px;
 }

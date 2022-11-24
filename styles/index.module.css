@@ -2,7 +2,10 @@
   overscroll-behavior-y: none;
 }
 
-.intro, .aboutCard, .skillsList, .designs {
+.intro,
+.aboutCard,
+.skillsList,
+.designs {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -60,7 +63,6 @@
 
 .designs {
   margin-top: 50px;
-  /* margin-left: 20%; */
   margin-bottom: 10%;
   position: relative;
 }
@@ -96,7 +98,7 @@
 
 @media screen and (max-width: 1268px) {
   .skillsList {
-    margin-left: 12%;
+    margin-left: 10%;
   }
 }
 
