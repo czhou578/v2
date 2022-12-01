@@ -93,6 +93,7 @@ const Home: NextPage = () => {
                 "Webpack",
                 "AWS",
                 "SQL",
+                "MongoDB",
               ]}
               toolsList={[
                 "Googling",
