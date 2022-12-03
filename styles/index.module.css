@@ -40,6 +40,7 @@
 }
 
 .moreProjects {
+  width: 60%;
   margin-top: 200px;
   margin-left: 20%;
 }
@@ -101,7 +102,6 @@
 }
 
 @media screen and (max-width: 1268px) {
-
   .skillsList {
     margin: 0 auto;
     width: 70%;

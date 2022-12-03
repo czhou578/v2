@@ -16,8 +16,8 @@ const Education: React.FC<{
           <div className={styles.school}>
             <Image
               src={logo}
-              width="150px"
-              height="150px"
+              width="100px"
+              height="100px"
               objectFit="contain"
             />
             <h2>{school}</h2>

@@ -24,6 +24,18 @@ const NoteWorthyProjects: FC = () => {
         description="This is the very first version of Wordament, using basic web technologies."
         techUsed={["HTML, CSS, JS"]}
       />
+      <NoteWorthyProjectCard
+        header="Doctors Orders"
+        githubLink="https://github.com/deekshacheruku/DoctorsOrders"
+        description="An Android app to help doctors and family track the medicine schedules of elderly patients."
+        techUsed={["Java"]}
+      />
+      <NoteWorthyProjectCard
+        header="Country Database"
+        githubLink="https://github.com/cs411-alawini/fa22-cs411-Q-team044-OurSQL"
+        description="A web app that allows for querying various data about all the countries of the world."
+        techUsed={["JS, React"]}
+      />
     </div>
   );
 };
