@@ -30,7 +30,7 @@
 
 .listings {
   display: flex;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .listings > div {

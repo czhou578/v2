@@ -18,7 +18,7 @@ export const SkillsList: FC<{
             style={{
               color: "lightblue",
               fontSize: "1rem",
-              marginLeft: "-15px",
+              // marginLeft: "-15px",
             }}
           >
             Technologies:
@@ -38,7 +38,7 @@ export const SkillsList: FC<{
             style={{
               color: "lightblue",
               fontSize: "1rem",
-              marginLeft: "-15px",
+              // marginLeft: "-15px",
             }}
           >
             Tools:
@@ -58,7 +58,7 @@ export const SkillsList: FC<{
             style={{
               color: "lightblue",
               fontSize: "1rem",
-              marginLeft: "-15px",
+              // marginLeft: "-15px",
             }}
           >
             Currently Learning:

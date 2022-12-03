@@ -8,7 +8,12 @@
 }
 
 .school {
+  display: flex;
   text-align: left;
+}
+
+.school > h2 {
+  padding-left: 20px;
 }
 
 .degreedatewrapper {

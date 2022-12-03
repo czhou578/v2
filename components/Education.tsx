@@ -1,17 +1,25 @@
+import Image from "next/image";
 import styles from "../styles/education.module.css";
 
 const Education: React.FC<{
+  logo: StaticImageData;
   school: string;
   degreeLevel: string;
   date: string;
   activities?: string[];
   relevantClasses: string[];
-}> = ({ school, degreeLevel, date, activities, relevantClasses }) => {
+}> = ({ school, degreeLevel, date, activities, relevantClasses, logo }) => {
   return (
     <div className={styles.globalwrapper}>
       <div className={styles.degreedatewrapper}>
         <div>
           <div className={styles.school}>
+            <Image
+              src={logo}
+              width="150px"
+              height="150px"
+              objectFit="contain"
+            />
             <h2>{school}</h2>
           </div>
           <div className={styles.degree}>

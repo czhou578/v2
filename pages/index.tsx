@@ -10,6 +10,9 @@ import Introduction from "../components/Introduction";
 import MediaLinks from "../components/MediaLinks";
 import NoteWorthyProjects from "../components/NoteWorthyProjects";
 import ProjectCardContainer from "../components/ProjectCard";
+import BellevueCollegeLogo from "../public/images/BellevueCollegeLogo.png";
+import CHSLogo from "../public/images/CupertinoHighLogo.jpg";
+import UIUCLogo from "../public/images/UIUC-Logo.jpg";
 import Design from "../public/svgs/Design";
 import Programmer from "../public/svgs/Programmer";
 import styles from "../styles/index.module.css";
@@ -38,10 +41,11 @@ const Home: NextPage = () => {
           <div className={styles.education} id="div-2">
             <h2 className={styles.educationHeader}>Education</h2>
             <Education
+              logo={UIUCLogo}
               school="University of Illinois Urbana-Champaign"
               degreeLevel="Master of Computer Science"
               date="August 2022 - Present"
-              activities={["CS 411 Project Team Captain"]}
+              activities={["CS 411 Database Project Team Lead"]}
               relevantClasses={[
                 "User-Interface Design,",
                 "Databases,",
@@ -49,6 +53,7 @@ const Home: NextPage = () => {
               ]}
             />
             <Education
+              logo={BellevueCollegeLogo}
               school="Bellevue College"
               degreeLevel="Bachelor of Science in Computer Science"
               date="September 2019 - June 2022"
@@ -65,6 +70,7 @@ const Home: NextPage = () => {
               ]}
             />
             <Education
+              logo={CHSLogo}
               school="Cupertino High School"
               degreeLevel="High School Diploma"
               date="August 2015 - June 2019"
@@ -93,18 +99,20 @@ const Home: NextPage = () => {
                 "Webpack",
                 "AWS",
                 "SQL",
+                "Java / Android Development",
                 "MongoDB",
               ]}
               toolsList={[
                 "Googling",
                 "VSCode",
+                "Markdown",
                 "Jira",
-                "Wireframes",
                 "Git",
                 "Scrum",
                 "Agile",
                 "Speaking",
                 "Writing",
+                "Wireframes",
               ]}
               learningList={[
                 "Containerization",
