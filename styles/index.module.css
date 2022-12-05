@@ -12,8 +12,9 @@
 }
 
 .svgContainer {
-  margin-left: 10%;
-  margin-top: 140px;
+  padding-top: 140px;
+  margin: 0 auto;
+  width: 90%;
   display: flex;
 }
 
@@ -26,15 +27,15 @@
 }
 
 .experience {
-  margin-top: 300px;
+  padding-top: 200px !important;
   margin: 0 auto !important;
-  width: 70%;
-  padding-left: 200px;
-  /* margin-left: 27%; */
+  width: 60%;
+  /* padding-left: 300px; */
   min-height: 700px;
 }
 
 .projects {
+  padding-top: 200px !important;
   margin: 0 auto !important;
   width: 70%;
 }

@@ -1,213 +1,61 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
-import BellevueCollegeLogo from "../public/images/BellevueCollegeLogo.png";
-import CHSLogo from "../public/images/CupertinoHighLogo.jpg";
-import EndevreLogo from "../public/images/endevreLogo.jpg";
-import IOIntel from "../public/images/IO_Intelligence.jpg";
-import PencilLogo from "../public/images/pencil.jpg";
-import QuoraLogo from "../public/images/QuoraLogo.png";
-import SelfEmployedLogo from "../public/images/SelfEmployedLogo.jpg";
-import UpworkLogo from "../public/images/upworkLogo.png";
-import openCity from "../scripts/tab";
-
-const headers = [
-  "IOIntelligence",
-  "Project Elpis Intern",
-  "Endevre Technologies",
-  "Bellevue College CS SAB",
-  "Self-Employed",
-  "Quora",
-  "Upwork Freelancer",
-  "Writing Tutor",
-];
-
-const timeStamps = [
-  "07/2022 - 09/2022",
-  "06/2021 - 09/2021",
-  "06/2017 - present",
-  "08/2021 - 06/2022",
-  "08/2020 - present",
-  "08/2017 - 03/2020",
-  "06/2019 - 08/2019",
-  "08/2017 - 02/2018",
-];
+import React from "react";
+import styles from "../styles/experience.module.css";
 
 const Experience: React.FC<{
-  headers: string[];
-  lists: JSX.Element[];
-}> = ({ headers, lists }) => {
-  const ref = React.useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    ref!.current!.click();
-  });
-
+  companyLogo: StaticImageData;
+  companyName: string;
+  position: string;
+  date: string;
+  location: string;
+  description: string[];
+}> = ({ companyLogo, companyName, position, date, location, description }) => {
   return (
-    <>
-      <div className={"tab"}>
-        {headers.map((element, key) => {
-          if (key === 0) {
-            return (
-              <button
-                className={"tabLinks"}
-                onClick={(e) => openCity(e, element)}
-                key={key}
-                ref={ref}
-              >
-                {element}
-              </button>
-            );
-          } else {
-            return (
-              <button
-                className={"tabLinks"}
-                onClick={(e) => openCity(e, element)}
-                key={key}
-              >
-                {element}
-              </button>
-            );
-          }
-        })}
-      </div>
-      {headers.map((header, key) => {
-        return (
-          <div className={"tabContent"} id={header} key={key}>
-            <h3 key={key} className="experHeader">
-              {header}
-            </h3>
-            <div>{lists[key]}</div>
+    <div style={{ width: "90%", marginTop: "20px" }} className={styles.wrapper}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "flex-start",
+          columnGap: "3px",
+          flexBasis: "1px",
+        }}
+      >
+        <div>
+          <Image
+            height="100px"
+            width="100px"
+            src={companyLogo}
+            objectFit="contain"
+          />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginLeft: "20px",
+            flexBasis: "900px",
+          }}
+        >
+          <div>
+            <span style={{ display: "block" }}>{position}</span>
+            <span style={{ display: "block" }}>{companyName}</span>
+            <span style={{ display: "block" }}>{date}</span>
+            <span style={{ display: "block" }}>{location}</span>
           </div>
-        );
-      })}
-    </>
-  );
-};
-
-const ExperienceList: React.FC<{
-  logo: StaticImageData;
-  elements: string[];
-  timeStampsIndex: number;
-}> = ({ logo, elements, timeStampsIndex }) => {
-  return (
-    <div className="listWrapper">
-      <Image
-        src={logo}
-        alt="Image"
-        width="150px"
-        height="150px"
-        objectFit="contain"
-        className="expImage"
-      />
-      <ul className="expElement">
-        {elements.map((element, key) => {
-          return <li key={key}>{element}</li>;
-        })}
-      </ul>
-      <div className="times">
-        <h3>{timeStamps[timeStampsIndex]}</h3>
+          <div>
+            {description.map((element, key) => {
+              return (
+                <div>
+                  {/* {element} */}
+                  <p key={key}>{element}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-const ExperienceContainer: React.FC = () => {
-  return (
-    <div className="experience-container">
-      <Experience
-        headers={headers}
-        lists={[
-          <ExperienceList
-            timeStampsIndex={0}
-            elements={[
-              `Used Chakra UI, React, Express.js and MySQL to develop a prototype of a full stack, 5 page application dashboard that displays networking analytics
-            coming from multiple company-owned wireless devices around the world. `,
-            ]}
-            logo={IOIntel}
-          />,
-          <ExperienceList
-            timeStampsIndex={1}
-            elements={[
-              `Designed / developed a serverless web app that would be used by New York public school 
-              teachers to monitor and track the academic progress of at-risk high school students.`,
-
-              `Made final design choices for UI components.`,
-
-              `Used React to implement UI components on the frontend and AWS for storing media and files 
-              on the backend. Queried AWS DynamoDB using GraphQL.`,
-            ]}
-            logo={PencilLogo}
-          />,
-          <ExperienceList
-            timeStampsIndex={2}
-            elements={[
-              `Promoted company products through emails, and by giving presentations at events.`,
-
-              `Secured sponsorships with multiple hackathon events at high schools throughout the Bay Area.`,
-
-              `Designed company websites and page layouts for products.`,
-            ]}
-            logo={EndevreLogo}
-          />,
-          <ExperienceList
-            timeStampsIndex={3}
-            elements={[
-              `Met with faculty and fellow board members to discuss how to grow Bellevue College CS (currently at 150 students).`,
-
-              `Helped facilitate constructive communication between faculty and students with regards to curriculum and structure
-              of classes.`,
-
-              `Planned out budget, totaling around $1000, for usage by the CS department for the 2023 school year. Managed and kept
-              records of all expenses that were spent by Bellevue College CS board members.`,
-            ]}
-            logo={BellevueCollegeLogo}
-          />,
-          <ExperienceList
-            timeStampsIndex={4}
-            elements={[
-              `Created websites and designs for fun using various frontend technologies like React,
-              UI frameworks like Semantic UI, and Typescript.`,
-
-              `Used the Google Chrome API to create a Google Chrome extension to block YouTube recommendations.`,
-
-              `Developed a replica of the popular Microsoft Wordament game using Typescript, and React.`,
-            ]}
-            logo={SelfEmployedLogo}
-          />,
-          <ExperienceList
-            timeStampsIndex={5}
-            elements={[
-              `Writing about history, and other topics, with over 25 million answer views since 2017.`,
-
-              `Managing own blog about futuristic technology, over 30k followers.`,
-
-              `Admin and moderator of multiple blogs about finance and interesting information.`,
-            ]}
-            logo={QuoraLogo}
-          />,
-          <ExperienceList
-            timeStampsIndex={6}
-            elements={[
-              `Assisted clients with publishing articles on Quora.`,
-
-              `Utilized communication skills to deliver clients work on time.`,
-
-              `Used outreach abilities on Quora to drive traffic to client's websites.`,
-            ]}
-            logo={UpworkLogo}
-          />,
-          <ExperienceList
-            timeStampsIndex={7}
-            elements={[
-              `Helped tutor Cupertino High School sophomores with improving their writing.`,
-              `Coordinated with high school/college teachers with tutoring progress.`,
-            ]}
-            logo={CHSLogo}
-          />,
-        ]}
-      />
-    </div>
-  );
-};
-
-export default ExperienceContainer;
+export default Experience;
