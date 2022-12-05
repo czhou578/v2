@@ -6,7 +6,7 @@ export const ayParagraph = `This project was a playground for me to practice my 
 what a future of the whitehouse.gov website would look like if Andrew Yang got elected as the
 US President in 2024.`;
 
-export const cwParagraph = `I created a mockup of a possible future cryptocurrency website, which helped me practice
+export const cwParagraph = `A mockup of a cryptocurrency website, which helped me practice
 CSS animations. `;
 
 export const wParagraph = `I created my own version of the popular Microsoft game Wordament. Users are to 

@@ -2,6 +2,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "next/link";
 import { FC } from "react";
 import styles from "../styles/noteworthyprojects.module.css";
+import { cwParagraph } from "./Descriptions";
 
 const NoteWorthyProjects: FC = () => {
   return (
@@ -35,6 +36,12 @@ const NoteWorthyProjects: FC = () => {
         githubLink="https://github.com/cs411-alawini/fa22-cs411-Q-team044-OurSQL"
         description="A web app that allows for querying various data about all the countries of the world."
         techUsed={["JS, React"]}
+      />
+      <NoteWorthyProjectCard
+        header="Crypto Website"
+        githubLink="https://github.com/czhou578/CryptoWebsiteMockup"
+        description={cwParagraph}
+        techUsed={["HTML, CSS, JS, Figma"]}
       />
     </div>
   );

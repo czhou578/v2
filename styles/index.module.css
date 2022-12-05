@@ -41,9 +41,9 @@
 }
 
 .moreProjects {
-  width: 60%;
-  margin-top: 200px;
-  margin-left: 20%;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 200px;
 }
 
 .moreProjHeader {

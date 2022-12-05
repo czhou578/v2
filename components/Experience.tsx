@@ -37,17 +37,26 @@ const Experience: React.FC<{
           }}
         >
           <div>
-            <span style={{ display: "block" }}>{position}</span>
-            <span style={{ display: "block" }}>{companyName}</span>
-            <span style={{ display: "block" }}>{date}</span>
-            <span style={{ display: "block" }}>{location}</span>
+            <span style={{ display: "block" }} className={styles.position}>
+              {position}
+            </span>
+            <span style={{ display: "block" }} className={styles.companyName}>
+              {companyName}
+            </span>
+            <span style={{ display: "block" }} className={styles.date}>
+              {date}
+            </span>
+            <span style={{ display: "block" }} className={styles.location}>
+              {location}
+            </span>
           </div>
           <div>
             {description.map((element, key) => {
               return (
                 <div>
-                  {/* {element} */}
-                  <p key={key}>{element}</p>
+                  <p key={key} className={styles.element}>
+                    {element}
+                  </p>
                 </div>
               );
             })}

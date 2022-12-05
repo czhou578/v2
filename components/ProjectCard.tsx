@@ -214,29 +214,6 @@ const ProjectCardContainer: React.FC = () => {
         hostingLink="https://distance-calculator-a905f.web.app/"
       />
       <ProjectCard
-        img={["/images/CW1.png", "/images/CW2.png"]}
-        list={
-          <ProjectSkillsList
-            skills={[
-              "HTML/SASS",
-              "JavaScript",
-              "Bootstrap",
-              "Figma",
-              "Lunarcrush Crypto API",
-            ]}
-          />
-        }
-        description={
-          <ProjectDescription
-            header="Crypto Website"
-            elucidation={elucidations[2]}
-          />
-        }
-        githubLink="https://github.com/czhou578/CryptoWebsiteMockup"
-        hostingLink="https://priceless-curie-d29ee9.netlify.app/"
-      />
-
-      <ProjectCard
         img={["/images/YT.png", "/images/YT2.png"]}
         list={<ProjectSkillsList skills={["Google Chrome API", "CSS"]} />}
         description={
