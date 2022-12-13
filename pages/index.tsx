@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Script from "next/script";
 import Aboutcard, { SkillsList } from "../components/Aboutcard";
+import Classwork from "../components/Classwork";
 import DesignsContainer from "../components/DesignsContainer";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
@@ -254,8 +255,11 @@ const Home: NextPage = () => {
             <h2 className={styles.moreProjHeader}>Noteworthy Projects</h2>
             <NoteWorthyProjects />
           </div>
+          <div className={styles.classwork}>
+            <h2 className={styles.classworkHeader}>Classwork</h2>
+            <Classwork />
+          </div>
           <div className={styles.designs} id="div-5">
-            {/* <h2 className={styles.designHeader}>My Designs</h2> */}
             <DesignsContainer />
           </div>
           <div className={styles.icons}>

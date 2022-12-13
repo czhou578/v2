@@ -40,8 +40,8 @@
   width: 70%;
 }
 
-.moreProjects {
-  width: 70%;
+.moreProjects, .classwork {
+  width: 80%;
   margin: 0 auto;
   padding-top: 200px;
 }
@@ -57,7 +57,8 @@
 .expHeader,
 .educationHeader,
 .designHeader,
-.moreProjHeader {
+.moreProjHeader,
+.classworkHeader {
   color: #e6c6f5;
   font-size: 1.8rem;
   white-space: pre-wrap;
