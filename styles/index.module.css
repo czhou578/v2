@@ -14,7 +14,7 @@
 .svgContainer {
   padding-top: 140px;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   display: flex;
 }
 
@@ -30,7 +30,6 @@
   padding-top: 200px !important;
   margin: 0 auto !important;
   width: 60%;
-  /* padding-left: 300px; */
   min-height: 700px;
 }
 
@@ -41,7 +40,7 @@
 }
 
 .moreProjects, .classwork {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding-top: 200px;
 }
