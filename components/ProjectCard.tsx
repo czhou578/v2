@@ -6,6 +6,7 @@ import styles from "../styles/projectCard.module.css";
 import styles2 from "../styles/projectdescription.module.css";
 import {
   ayParagraph,
+  backendParagraph,
   cwParagraph,
   dcParagraph,
   ElpisParagraph,
@@ -20,6 +21,7 @@ const elucidations = [
   ayParagraph,
   cwParagraph,
   wParagraph,
+  backendParagraph,
   youtubeParagraph,
   ElpisParagraph,
   foodAppParagraph,
@@ -45,6 +47,7 @@ const ProjectCard: React.FC<{
   description: JSX.Element;
   chromeBlocker?: boolean;
   projectElpis?: boolean;
+  reactBenchmarks?: boolean;
   githubLink: string;
   hostingLink?: string;
 }> = ({
@@ -53,6 +56,7 @@ const ProjectCard: React.FC<{
   description,
   chromeBlocker,
   projectElpis,
+  reactBenchmarks,
   githubLink,
   hostingLink,
 }) => {
@@ -70,7 +74,7 @@ const ProjectCard: React.FC<{
       <div className={styles.explain}>
         {description}
         {list}
-        {chromeBlocker || projectElpis ? (
+        {chromeBlocker || projectElpis || reactBenchmarks ? (
           <div className={styles.iconWrapper}>
             <Link href={githubLink} scroll={false}>
               <a>
@@ -145,6 +149,29 @@ const ProjectCardContainer: React.FC = () => {
         }
         projectElpis={true}
         githubLink="https://github.com/czhou578/Code-Samples-Project-Elpis"
+      />
+      <ProjectCard
+        img={["/images/benchmark1.png", "/images/benchmark2.png"]}
+        list={
+          <ProjectSkillsList
+            skills={[
+              "TypeScript",
+              "React.js",
+              "Node.js",
+              "MySQL",
+              "Python / Flask",
+              "Golang",
+            ]}
+          />
+        }
+        description={
+          <ProjectDescription
+            header="React Backend-Benchmarks"
+            elucidation={elucidations[4]}
+          />
+        }
+        reactBenchmarks
+        githubLink="https://github.com/czhou578/React-Backend-Benchmarks"
       />
       <ProjectCard
         img={["/images/W1.png", "/images/W2.png"]}

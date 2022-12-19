@@ -9,6 +9,10 @@ US President in 2024.`;
 export const cwParagraph = `A mockup of a cryptocurrency website, which helped me practice
 CSS animations. `;
 
+export const backendParagraph = `A web application with a React frontend and three backends written in different
+languages that are all connected to a common MySQL database. Users will be able to send repetitive queries to any
+backend that they choose and see how fast the server responds after the completed operation.`;
+
 export const wParagraph = `I created my own version of the popular Microsoft game Wordament. Users are to 
 swipe with a mouse to create words using the provided alphabet letters, and are awarded a 
 specific amount of points depending on whether a guess results in a word.`;
