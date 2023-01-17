@@ -11,7 +11,10 @@ const Experience: React.FC<{
   description: string[];
 }> = ({ companyLogo, companyName, position, date, location, description }) => {
   return (
-    <div style={{ width: "90%", marginTop: "20px" }} className={styles.wrapper}>
+    <div
+      style={{ width: "100%", marginTop: "20px" }}
+      className={styles.wrapper}
+    >
       <div
         style={{
           display: "flex",

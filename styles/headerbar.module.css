@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 35px;
 }
 
 .logo {
   float: left;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .taskbar {
