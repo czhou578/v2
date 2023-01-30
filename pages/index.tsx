@@ -168,7 +168,7 @@ const Home: NextPage = () => {
               companyLogo={EndevreLogo}
               companyName="Endevre Technologies"
               position="Head of Marketing / Designer"
-              date="06/2017 - present"
+              date="06/2017 - 05/2018"
               location="Cupertino, California. United States"
               description={[
                 `Promoted company products through emails, and by giving presentations at events.`,
